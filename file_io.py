@@ -4,7 +4,7 @@ import re
 from collections import Counter
 
 
-def findApps(list, data):
+def findApps(apps, data):
     # 将NOR关键字分行处理，便于后续操作
     data = data.replace('[NOR]', '\n[NOR]')
     rcode = r'\b' + start + r'.*?' + end + r'\b'
@@ -15,7 +15,7 @@ def findApps(list, data):
         e = i.find('[')
         app_name = i[s:e]
         if len(app_name) != 0:
-            list.append(app_name)
+            apps.append(app_name)
 
 def openFile(path):
     f = open(path, "r", encoding='utf-8')

@@ -1,20 +1,23 @@
 import re
+
 # 找到所有的app名称
+from collections import Counter
+
+
 def findApps(list, data):
     # 将NOR关键字分行处理，便于后续操作
     data = data.replace('[NOR]', '\n[NOR]')
-    rcode = r'\b' + startcfg + r'.*?' + endcfg + r'\b'
+    rcode = r'\b' + start + r'.*?' + end + r'\b'
     a = re.findall(rcode, data, flags=0)
     for i in a:
         # 裁剪字符串
-        s=i.find(']')+1
-        e=i.find('[')
-        appname = i[s:e]
-        if (len(appname) != 0):
-            list.append(appname)
+        s = i.find(']') + 1
+        e = i.find('[')
+        app_name = i[s:e]
+        if len(app_name) != 0:
+            list.append(app_name)
 
-
-def getFileContext(path):
+def openFile(path):
     f = open(path, "r", encoding='utf-8')
     data = f.read()
     return data
@@ -22,24 +25,21 @@ def getFileContext(path):
 
 def main():
     # 读取文件
-    data = getFileContext(path)
+    data = openFile(path)
     # 正则表达式匹配
     apps = []
     findApps(apps, data)
-    # 去除重复并且判断出现了多少次
-    res = []
-    for i in apps:
-        if not res.__contains__(i):
-            res.append(i)
+    # 计数
+    a = Counter(apps)
+    a = a.most_common()
     # 输出结果
-    print("整个文档共包含", res.__len__(), "个",[startcfg],[endcfg])
-    for i in res:
-        print(i, '共出现', apps.count(i), '次')
+    for i in a:
+        print(i)
 
 
 # 配置參數——START
-path = "F:\PythonPoj\PythonLearn\正则靶标.txt"      #文件路径
-startcfg = 'NOR'                                        #头关键字
-endcfg = 'ENT.TV'                                       #尾关键字
+path = "F:\PythonPoj\PythonLearn\正则靶标.txt"  # 文件路径
+start = 'NOR'  # 头关键字
+end = 'LOC.CATER'  # 尾关键字
 # 配置蠶食——END
 main()

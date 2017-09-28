@@ -1,11 +1,8 @@
 import os
-import re
 import urllib
-import uuid
 
 import requests
 from bs4 import BeautifulSoup
-from requests import request
 
 urlPath = 'http://www.quanjing.com/'
 localPath = 'd:\\pythonPath'
@@ -29,8 +26,7 @@ def getImageList(html, lst):
             continue
 
 
-def start():
-    root = "http://www.quanjing.com/"
+def main():
     html = gethemltext("https://www.douyu.com/directory/game/yz")
     list = []
     getImageList(html, list)
@@ -43,11 +39,11 @@ def start():
             print(src)
             urllib.request.urlretrieve(src, dir + '%s.jpg' % tmp)
             tmp += 1
-            print('成功')
+            print('success')
         except:
-            print('失败')
-    print('下载完毕')
+            print('error')
+    print('finished')
 
 
-# 开始获取
-start()
+# start get image
+main()

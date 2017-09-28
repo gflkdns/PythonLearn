@@ -4,8 +4,6 @@ import re
 # 找到所有的app名称
 from collections import Counter
 
-import os
-
 
 def findApps(apps, data):
     # 将NOR关键字分行处理，便于后续操作
@@ -41,7 +39,7 @@ def main():
     # 输出结果
     for i in a:
         str = i.__str__() + "\n"
-        result, number = re.subn(r'[,()\']', '', str)
+        result, number = re.subn(r'[,()\']', '\t', str)
         file_object.write(result)
         print(result)
     file_object.close()

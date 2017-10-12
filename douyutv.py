@@ -25,7 +25,6 @@ def getImageList(html, lst):
         except:
             continue
 
-
 def main():
     html = gethemltext("https://www.douyu.com/directory/game/yz")
     list = []

@@ -1,5 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import codecs
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -32,7 +34,10 @@ while True:
         page += 20
     else:
         break
-
-print("爬取结果(" + str(com.__len__()) + ")：-------↓--------",)
-for i in com:
-    print('评论：', i)
+# 保存文件
+out_path = "F:\PythonPoj\PythonLearn\\thefile.txt"  # 输出路径
+file_object = codecs.open(out_path, 'w', 'utf-8')
+print("爬取结果:", str(com.__len__()), out_path)
+for i, text in zip(range(0, com.__len__()), com):
+    file_object.write(str(i + 1) + "." + text + "\n")
+file_object.close()

@@ -1,3 +1,5 @@
+import datetime
+
 import matplotlib.pyplot as plt
 import requests
 from bs4 import BeautifulSoup
@@ -8,7 +10,8 @@ import re
 def draw(keys, values):
     plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
     plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
-    plt.title("城市分布图")
+    time = i = datetime.datetime.now()
+    plt.title(str(time.year) + "/" + str(time.month) + "/" + str(time.day) + zhiwei + "职位数分布图")
     plt.bar(keys, values, label="职位数")
     plt.legend()
     plt.show()
@@ -54,7 +57,7 @@ def getData(citys, data):
             rr = r'(?!共<em>)[0-9]+(?=</em>个职位满足条件)'
             a = re.findall(rr, r.text, 0)
 
-            if int(a[0]) >= 20 and hasCity(r):
+            if int(a[0]) >= 50 and hasCity(r):
                 print(city, zhiwei, a[0])
                 data[city] = int(a[0])
         else:
@@ -75,10 +78,13 @@ def hasCity(r):
     return True
 
 
-zhiwei = "android"
+zhiwei = "python"
 if __name__ == '__main__':
     citys = []
     data = {
+        "qq": 123,
+        "q1q": 123,
+        "qq2": 123,
     }
     # 获得所有的城市
     getCitys(citys)
@@ -89,7 +95,7 @@ if __name__ == '__main__':
     data2 = sorted(data.items(), key=lambda d: d[1], reverse=True)
     print(data2)
     result = {}
-    for x in range(20):
+    for x in range(16):
         print(data2[x])
         result[data2[x][0]] = data2[x][1]
     draw(result.keys(), result.values())

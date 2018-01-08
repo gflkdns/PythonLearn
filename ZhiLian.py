@@ -1,9 +1,7 @@
 import datetime
-
 import matplotlib.pyplot as plt
 import requests
 from bs4 import BeautifulSoup
-from selenium import webdriver
 import re
 
 
@@ -62,7 +60,6 @@ def getData(citys, data):
                 data[city] = int(a[0])
         else:
             print("城市获取失败！")
-
 
 def hasCity(r):
     soup = BeautifulSoup(r.text, 'html.parser')

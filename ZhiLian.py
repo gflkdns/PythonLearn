@@ -75,13 +75,13 @@ def hasCity(r):
     return True
 
 
-zhiwei = "python"
+zhiwei = "android"
 if __name__ == '__main__':
     citys = []
     data = {
-        "qq": 123,
-        "q1q": 123,
-        "qq2": 123,
+        # "qq": 123,
+        # "q1q": 123,
+        # "qq2": 123,
     }
     # 获得所有的城市
     getCitys(citys)
@@ -92,7 +92,7 @@ if __name__ == '__main__':
     data2 = sorted(data.items(), key=lambda d: d[1], reverse=True)
     print(data2)
     result = {}
-    for x in range(16):
+    for x in range(10,26):
         print(data2[x])
         result[data2[x][0]] = data2[x][1]
     draw(result.keys(), result.values())

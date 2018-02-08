@@ -23,8 +23,10 @@ def follow(username):
     print(r.status_code)
 
 
-def getUserId():
-    usernames = []
+usernames = []
+
+
+def getUserId(user):
     # 获取极客头条userid
 
     # 通过获取到的这一部分,进行迭代粉丝和已关注
@@ -38,7 +40,7 @@ def getUserId():
         'Connection': 'keep-alive',
         'Cache-Control': 'max-age=0',
     }
-    url = 'http://my.csdn.net/{userid}'.format(userid='lmj623565791')
+    url = 'http://my.csdn.net/{userid}'.format(userid=user)
     print("开始爬取：")
     r = requests.get(url, headers=headers)
     if r.ok:
@@ -48,13 +50,25 @@ def getUserId():
         rr = "username='[^<>]*'"
         a = re.findall(rr, r.text, 0)
         for i in a:
+            i=i[10:-1]
             if i != '' and i not in usernames:
                 usernames.append(i)
+                follow(i)
     else:
         print("用户获取失败！", r.status_code)
-    return usernames
 
 
 if __name__ == '__main__':
-    userids = getUserId()
-    print(userids)
+    getUserId('sinyu890807')
+    # 迭代几次  指数增长  慎重!
+    for user in usernames:
+        getUserId(user)
+    for user in usernames:
+        getUserId(user)
+    for user in usernames:
+        getUserId(user)
+    for user in usernames:
+        getUserId(user)
+    for user in usernames:
+        getUserId(user)
+    print(usernames)

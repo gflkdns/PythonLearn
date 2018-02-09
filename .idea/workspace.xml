@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f8b8fb4-847d-496c-8f35-084e069df5bb" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/img/timeimg.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -35,8 +36,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+            <state relative-caret-position="495">
+              <caret line="31" column="98" lean-forward="true" selection-start-line="31" selection-start-column="98" selection-end-line="31" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -57,18 +58,8 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="texsqueezer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/texsqueezer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="97" column="28" lean-forward="true" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
+            <state relative-caret-position="32">
+              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -245,6 +236,11 @@
             <path>
               <item name="PythonLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonLearn" type="462c0819:PsiDirectoryNode" />
               <item name="mehu" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -259,16 +255,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\PythonPoj\PythonLearn" />
-      <recent name="F:\PythonPoj\PythonLearn\line" />
-      <recent name="F:\PythonPoj\PythonLearn\draw" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\PythonPoj\PythonLearn\img" />
       <recent name="F:\PythonPoj\PythonLearn\findMM" />
       <recent name="F:\PythonPoj\PythonLearn\line\Samples" />
       <recent name="F:\PythonPoj\PythonLearn\line" />
       <recent name="F:\PythonPoj\PythonLearn\mehu" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\PythonPoj\PythonLearn" />
+      <recent name="F:\PythonPoj\PythonLearn\line" />
+      <recent name="F:\PythonPoj\PythonLearn\draw" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -562,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518160784646</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update readme">
+      <created>1518162080394</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1518162080394</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -627,7 +631,8 @@
     <MESSAGE value="python模仿作画" />
     <MESSAGE value="python do_follow csdn" />
     <MESSAGE value="python unfollow" />
-    <option name="LAST_COMMIT_MESSAGE" value="python unfollow" />
+    <MESSAGE value="update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -650,13 +655,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39040">
-          <caret line="2492" column="24" lean-forward="false" selection-start-line="2492" selection-start-column="24" selection-end-line="2492" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/line/Samples/topfandisk.obj" />
     <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/-1154059523/sys.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -961,22 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/texsqueezer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="97" column="28" lean-forward="true" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thefile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -995,10 +977,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/texsqueezer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="108" column="25" lean-forward="true" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/timeimg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        <state relative-caret-position="495">
+          <caret line="31" column="98" lean-forward="true" selection-start-line="31" selection-start-column="98" selection-end-line="31" selection-end-column="98" />
           <folding />
         </state>
       </provider>

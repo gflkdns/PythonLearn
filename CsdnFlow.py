@@ -42,10 +42,6 @@ followedUsers = []
 
 
 def getUserId(user):
-    # 获取极客头条userid
-
-    # 通过获取到的这一部分,进行迭代粉丝和已关注
-
     url = 'http://my.csdn.net/{userid}'.format(userid=user)
     print("开始爬取：")
     r = requests.get(url, headers=headers)
@@ -62,8 +58,7 @@ def getUserId(user):
                 follow(i)
                 # 放入已经关注列表
                 followedUsers.append(i)
-                # 迭代
-                getUserId(i)
+
     else:
         print("用户获取失败！", r.status_code)
 
@@ -80,7 +75,7 @@ def unFollow(username):
 
 
 def getFollowMyUser():
-    for i in range(46):
+    for i in range(50):
 
         url = 'http://my.csdn.net/my/follow/{page}'.format(page=i)
         r = requests.get(url, headers=headers)
@@ -98,5 +93,7 @@ def getFollowMyUser():
 
 if __name__ == '__main__':
     getUserId('sinyu890807')
-
+    for i in followedUsers:
+        # 迭代
+        getUserId(i)
     # getFollowMyUser()

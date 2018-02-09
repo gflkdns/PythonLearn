@@ -4,28 +4,15 @@
 
 一个模仿绘画风格的python脚本,它的效果大概是这样的:
 
-![python模拟作画][draw/dfq_at_iteration_49.png]
-!(python模拟作画)[draw/IMG_20170908_180944.jpg]
+![python模拟作画生成后的结果](draw/dfq_at_iteration_49.png)
+原画
+![python模拟作画原图](draw/IMG_20170908_180944.jpg)
+模板
+![python模拟作画模板](draw/timg.jpg)
 
 ### mehu/lapblas.py (OpenCV检测图片的清晰度)
 
-利用OpenCV 的拉普拉斯函数 来检测图片模糊还是清晰.
-
-### CSDNDemo.py (爬虫刷CSDN访问量)
-
-一不小心刷了10多万,赶紧停手[笑哭]
-
-### CsdnFlow.py (CSDN自动关注其他用户)
-
-想法来源于之前在github看到的一个项目,刷github的粉丝,原理是用python爬虫取到用户id批量关注,然后过一段时间检查有没有互粉,没有的话就批量取消关注.这个可以说是CSDN版吧...
-
-### douban.py (获取豆瓣某部电影的所有影评)
-
-爬虫用来练手的吧..
-
-### douyutv.py (爬取网站图片然后下载)
-
-也是用来练习写爬虫的.
+利用OpenCV 的拉普拉斯函数 来检测图片是模糊还是清晰.
 
 ### ImgClassify.py (对海量的图片根据时间进行分类)
 
@@ -43,4 +30,19 @@
 
 ![](http://img2.ph.126.net/YsfOZ-IxEyQkbrnOFkWSKQ==/1276770494379233603.png)
 
-这里有[详细介绍](http://imaster.top/2018/01/16/%E5%88%A9%E7%94%A8python%E5%88%86%E6%9E%902018%E6%99%BA%E8%81%94%E6%8B%9B%E8%81%98%E5%85%A8%E5%9B%BD%E5%90%84%E4%B8%AA%E5%9F%8E%E5%B8%82%E8%A1%8C%E4%B8%9A%E8%81%8C%E4%BD%8D%E6%95%B0%E6%8E%92%E5%90%8D/)
+[实现过程详细介绍](http://imaster.top/2018/01/16/%E5%88%A9%E7%94%A8python%E5%88%86%E6%9E%902018%E6%99%BA%E8%81%94%E6%8B%9B%E8%81%98%E5%85%A8%E5%9B%BD%E5%90%84%E4%B8%AA%E5%9F%8E%E5%B8%82%E8%A1%8C%E4%B8%9A%E8%81%8C%E4%BD%8D%E6%95%B0%E6%8E%92%E5%90%8D/)
+### CSDNDemo.py (爬虫刷CSDN访问量)
+
+一不小心刷了10多万,赶紧停手[笑哭]
+
+### CsdnFlow.py (CSDN自动关注其他用户)
+
+想法来源于之前在github看到的一个项目,刷github的粉丝,原理是用python爬虫取到用户id批量关注,然后过一段时间检查有没有互粉,没有的话就批量取消关注.这个可以说是CSDN版吧...
+
+### douban.py (获取豆瓣某部电影的所有影评)
+
+爬虫用来练手的吧..
+
+### douyutv.py (爬取网站图片然后下载)
+
+也是用来练习写爬虫的.

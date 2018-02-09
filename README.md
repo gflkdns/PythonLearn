@@ -4,7 +4,7 @@
 
 一个模仿绘画风格的python脚本,它的效果大概是这样的:
 
-!(python模拟作画)[draw/dfq_at_iteration_49.png]
+![python模拟作画][draw/dfq_at_iteration_49.png]
 !(python模拟作画)[draw/IMG_20170908_180944.jpg]
 
 ### mehu/lapblas.py (OpenCV检测图片的清晰度)
@@ -31,7 +31,7 @@
 
 一年了,手机里拍的照片是贼多啊,由于手机上有月份排序的功能,拷出来全放在一个文件夹里感觉非常难查阅,而且用百度云上传到云端的话单文件夹只能500个文件,于是,写个脚本给照片按照年份月份分一下类吧.
 
-!(分类结果){img/timeimg.png}
+![分类结果](img/timeimg.png)
 
 ### ZhiLian.py (利用python分析全国每个城市的职位数)
 
@@ -40,5 +40,7 @@
 这时候我们可能会打开招聘网站开始选择城市然后来了解这个城市的职位情况.
 
 那么一直秉持着人生苦短,我学python的我们,为什么不能用python来写一个分析2018全国各个城市的职位数排名的爬虫脚本呢?
+
+![](http://img2.ph.126.net/YsfOZ-IxEyQkbrnOFkWSKQ==/1276770494379233603.png)
 
 这里有[详细介绍](http://imaster.top/2018/01/16/%E5%88%A9%E7%94%A8python%E5%88%86%E6%9E%902018%E6%99%BA%E8%81%94%E6%8B%9B%E8%81%98%E5%85%A8%E5%9B%BD%E5%90%84%E4%B8%AA%E5%9F%8E%E5%B8%82%E8%A1%8C%E4%B8%9A%E8%81%8C%E4%BD%8D%E6%95%B0%E6%8E%92%E5%90%8D/)

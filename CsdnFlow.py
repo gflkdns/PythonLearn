@@ -91,9 +91,13 @@ def getFollowMyUser():
                     unFollow(al.contents[0])
 
 
+
+
+
+
 if __name__ == '__main__':
-    getUserId('sinyu890807')
+    getFollowMyUser()
+    getUserId('flysky_jay')
     for i in followedUsers:
         # 迭代
         getUserId(i)
-    # getFollowMyUser()

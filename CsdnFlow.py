@@ -5,32 +5,37 @@ from bs4 import BeautifulSoup
 headers = {
     'Host': 'my.csdn.net',
     'Connection': 'keep-alive',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36',
     'Accept': '*/*',
-    'Referer': 'http://blog.csdn.net/zwj1452267376/article/details/49359983',
+    'Referer': 'https://blog.csdn.net/zwj1452267376/article/details/49359983',
     'Accept-Encoding': 'gzip, deflate',
     'Accept-Language': 'zh-CN,zh;q=0.9',
-    'Cookie': 'uuid_tt_dd=10_20846746780-1512964358242-799235; UN=qq_27512671; kd_user_id=19f90254-dc59-47ed-9abf-4700f28faec0; bdshare_firstime=1513302064332; _ga=GA1.2.1756792947.1513754991; __utmz=17226283.1514449181.1.1.utmcsr=blog.csdn.net|utmccn=(referral)|utmcmd=referral|utmcct=/qq_27512671; __message_sys_msg_id=0; __message_gu_msg_id=0; __message_cnel_msg_id=0; UM_distinctid=160f7e1f8d446e-094b70768297df-454c092b-1fa400-160f7e1f8d5465; CloudGuest=1C7+xHAVnKB27nnIRYV6lEy8RGKD7ABB6jb3KJWrcpZSQvQsyzpxkDdi+1X1gsZDVoofE5CsV4A2Dd5fzqCpA3wNYnEagdqt5eryqAiFQM4gM7iZjG35Cir67e8OizP9YiO09DP73jQ+54fZ/Or3Ok9csyfxXbcSPiOsrLQih44ejysLKaejfK9IQAoz6+dq; __message_in_school=0; Hm_ct_6bcd52f51e9b3dce32bec4a3997715ac=1788*1*PC_VC; __utma=17226283.1756792947.1513754991.1516333419.1517535632.3; UserName=qq_27512671; UserInfo=516ZoXsRpXNZVFVGH2xffpHRh%2BHVBtC9y9CkSaiOwXYgVdsbjpv97NRKhGE7HJCEtH0TI9LzdO03C%2FJzyOV16LR0UDVAs%2FHeTMlAEwClmIcrpxMbSgZ9NVBnd9t8IGUSvp4HEWcT234ZZyeUrLoqdg%3D%3D; UserNick=%E7%97%95%E8%BF%B9%E4%B8%B6; AU=31E; BT=1518055708710; dc_session_id=10_1518078896871.912979; Hm_lvt_6bcd52f51e9b3dce32bec4a3997715ac=1518076630,1518077583,1518078153,1518078899; Hm_lpvt_6bcd52f51e9b3dce32bec4a3997715ac=1518079539; dc_tos=p3tpo3'
-}
-headers2 = {
-    'Host': 'blog.csdn.net',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-    'Accept-Language': 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
-    'Accept-Encoding': 'gzip, deflate',
-    'Referer': 'http://www.baidu.com',
-    'Connection': 'keep-alive',
-    'Cache-Control': 'max-age=0',
+    'Cookie': 'uuid_tt_dd=10_20345892100-1524212903385-435733;'
+              ' Hm_ct_6bcd52f51e9b3dce32bec4a3997715ac=1788*1*PC_VC; '
+              'kd_user_id=7295273f-7b6b-4192-b9a7-c942e97d0b84;'
+              ' UN=qq_27512671;'
+              ' UM_distinctid=163876d887ba03-0aaf3090c6e7a3-44410a2e-100200-163876d887c9e9;'
+              ' smidV2=20180703093604202daee73a21697260c8c4497935dbeb0080764ec19be9550;'
+              ' __utma=17226283.374765269.1526985204.1528946860.1530611441.4; '
+              '__utmz=17226283.1530611441.4.2.utmcsr=baidu|utmccn=(organic)|utmcmd=organic;'
+              ' dc_session_id=10_1533528901844.947334;'
+              ' Hm_lvt_6bcd52f51e9b3dce32bec4a3997715ac=1533526931,1533527162,1533528902,1533529447; '
+              'UserName=qq_27512671;'
+              ' UserInfo=516ZoXsRpXNZVFVGH2xffreDWYzmqhRd%2FPjQLP5E3cgKhwAZP2g0j2UUVMxpPV8YnDf1vvRCE7AKkIQNrB4xWyZQ8LqmbWFWcTZCEE0nt%2B1SjCJ0UTXxgeN0oAHvPF4ZXDtdRiwBUP4Yq%2BDpKVXibA%3D%3D;'
+              ' UserNick=%E7%97%95%E8%BF%B9%E4%B8%B6;'
+              ' AU=31E; BT=1533529462474; '
+              'UserToken=516ZoXsRpXNZVFVGH2xffreDWYzmqhRd%2FPjQLP5E3cgKhwAZP2g0j2UUVMxpPV8YnDf1vvRCE7'
+              'AKkIQNrB4xWyZQ8LqmbWFWcTZCEE0nt%2B1SjCJ0UTXxgeN0oAHvPF4Z%2F%2Fg9Qg%2Bu1QGldHvsTz5dbi2xCE'
+              'Cl9rSvzPnwp1K%2Fi6zs3BXOd7V7mf74RyRZ5agg; dc_tos=pd0ux1; Hm_lpvt_6bcd52f51e9b3dce32bec4a3997715ac=1533529477'
 }
 
 
 def follow(username):
-    follow = "http://my.csdn.net/index.php/follow/do_follow" \
-             "?jsonpcallback=jQuery191086230886103373_1518079539322" \
-             "&username={username}" \
-             "&_=1518079539325" \
-        .format(username=username)
-    r = requests.get(follow, headers=headers)
+    follow = "https://my.csdn.net/index.php/follow/do_follow?" \
+             "username={username}" \
+             "&jsonpcallback=jQuery190003126168270004337_1533532739748" \
+             "&_=1533532739752".format(username=username)
+    r = requests.get(follow, headers=headers, verify=False, )
     print("follow:", username,
           "status_code:", r.status_code,
           "message:", r.content
@@ -42,9 +47,9 @@ followedUsers = []
 
 
 def getUserId(user):
-    url = 'http://my.csdn.net/{userid}'.format(userid=user)
+    url = 'https://my.csdn.net/{userid}'.format(userid=user)
     print("开始爬取：")
-    r = requests.get(url, headers=headers)
+    r = requests.get(url, headers=headers, verify=False)
     if r.ok:
         r.raise_for_status()
         r.encoding = 'utf-8'
@@ -64,10 +69,10 @@ def getUserId(user):
 
 
 def unFollow(username):
-    url = "http://my.csdn.net/index.php/my/follow/do_unfollow"
+    url = "https://my.csdn.net/index.php/my/follow/do_unfollow"
     r = requests.post(url, data={
         "username": username
-    }, headers=headers)
+    }, headers=headers, verify=False, )
     if r.ok:
         print("un follow:", username)
     else:
@@ -77,8 +82,8 @@ def unFollow(username):
 def getFollowMyUser():
     for i in range(50):
 
-        url = 'http://my.csdn.net/my/follow/{page}'.format(page=i)
-        r = requests.get(url, headers=headers)
+        url = 'https://my.csdn.net/my/follow/{page}'.format(page=i)
+        r = requests.get(url, headers=headers, verify=False)
         r.raise_for_status()
         r.encoding = 'utf-8'
         data = r.text
@@ -89,10 +94,6 @@ def getFollowMyUser():
                 clas = al.attrs["class"]
                 if clas[0] == 'user_name':
                     unFollow(al.contents[0])
-
-
-
-
 
 
 if __name__ == '__main__':

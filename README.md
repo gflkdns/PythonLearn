@@ -44,7 +44,7 @@ http://yy2107hs.top/wd1.html
 ### CsdnFlow.py (CSDN自动关注其他用户)
 
 想法来源于之前在github看到的一个项目,刷github的粉丝,原理是用python爬虫取到用户id批量关注,然后过一段时间检查有没有互粉,没有的话就批量取消关注.这个可以说是CSDN版吧...
-ps：近期发现csdn已经换了https了，https也是可以抓包抓到请求头的，改了改脚本又能用了。
+ps：近期发现csdn已经换了https了，https也是可以抓包抓到请求头的，改了改脚本又能用了。只是要忽略下证书验证。
 
 ### douban.py (获取豆瓣某部电影的所有影评)
 

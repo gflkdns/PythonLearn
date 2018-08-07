@@ -4,11 +4,8 @@
     <list id="3ee67a41-363b-478b-aafd-8a05ee9996b7" name="发邮件" comment="发邮件" />
     <list default="true" id="5f8b8fb4-847d-496c-8f35-084e069df5bb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSDN.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSDNDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/csdn/CSDNDemo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CsdnFlow.py" beforeDir="false" afterPath="$PROJECT_DIR$/csdn/CsdnFlow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csdn/CSDNSendMsg.py" beforeDir="false" afterPath="$PROJECT_DIR$/csdn/CSDNSendMsg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csdn/CsdnFlow.py" beforeDir="false" afterPath="$PROJECT_DIR$/csdn/CsdnFlow.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +27,7 @@
     <SUITE FILE_PATH="coverage/PythonLearn$FileEnc.coverage" NAME="FileEnc Coverage Results" MODIFIED="1531444601007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$CsdnFlow.coverage" NAME="CsdnFlow Coverage Results" MODIFIED="1533534336992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$test.coverage" NAME="test Coverage Results" MODIFIED="1516241955779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonLearn$CSDNSendMsg.coverage" NAME="CSDNSendMsg Coverage Results" MODIFIED="1533608732544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csdn" />
+    <SUITE FILE_PATH="coverage/PythonLearn$CSDNSendMsg.coverage" NAME="CSDNSendMsg Coverage Results" MODIFIED="1533620136288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csdn" />
     <SUITE FILE_PATH="coverage/PythonLearn$lapblas.coverage" NAME="lapblas Coverage Results" MODIFIED="1516609348530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mehu" />
     <SUITE FILE_PATH="coverage/PythonLearn$douban.coverage" NAME="douban Coverage Results" MODIFIED="1518152467069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$findfile.coverage" NAME="findfile Coverage Results" MODIFIED="1518080755216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/findMM" />
@@ -45,11 +42,29 @@
       <file leaf-file-name="CSDNSendMsg.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csdn/CSDNSendMsg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
+            <state relative-caret-position="95">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connectionpool.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/urllib3/connectionpool.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1995">
+              <caret line="856" selection-start-line="856" selection-end-line="856" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CsdnFlow.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/csdn/CsdnFlow.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="92" column="23" lean-forward="true" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -124,6 +139,7 @@
         <option value="$PROJECT_DIR$/CsdnFlow.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/csdn/CSDNSendMsg.py" />
+        <option value="$PROJECT_DIR$/csdn/CsdnFlow.py" />
       </list>
     </option>
   </component>
@@ -170,11 +186,6 @@
             <path>
               <item name="PythonLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonLearn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="csdn" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -583,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533607533034</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="三位一体">
+      <created>1533610123620</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1533610123620</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -604,7 +622,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.4815603" weight="0.32598424" />
       <window_info anchor="bottom" id="Python Console" order="2" sideWeight="0.4822695" weight="0.32469305" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.74822694" weight="0.3535188" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.74822694" visible="true" weight="0.3535188" />
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.47588652" weight="0.3383356" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4952251" visible="true" weight="0.28038067" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -632,30 +650,30 @@
     <layout-to-restore>
       <window_info anchor="bottom" id="Salesforce" order="13" />
       <window_info anchor="bottom" id="Debug Logs" order="11" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4952251" visible="true" weight="0.36620468" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.74822694" visible="true" weight="0.19021739" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Data View" order="4" weight="0.32937893" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49716312" weight="0.32742155" />
-      <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4952251" visible="true" weight="0.36620468" />
       <window_info anchor="bottom" id="Python Console" order="2" sideWeight="0.4822695" weight="0.32469305" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.4971146" weight="0.32707775" />
       <window_info anchor="right" x="0" y="0" width="342" height="726" id="Documentation" order="7" visible="true" weight="0.06769723" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Execute Anonymous" order="12" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32934782" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5241135" side_tool="true" weight="0.24829468" />
-      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.4815603" weight="0.32605729" />
-      <window_info anchor="bottom" auto_hide="true" x="980" y="680" width="771" height="268" id="Debug" order="16" sideWeight="0.58794326" weight="0.50341064" />
-      <window_info anchor="right" x="297" y="244" width="1362" height="660" id="SciView" order="6" weight="0.26385927" />
-      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.4971146" weight="0.32707775" />
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.47588652" weight="0.3383356" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5241135" side_tool="true" weight="0.24829468" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32934782" />
+      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.4815603" weight="0.32605729" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="297" y="244" width="1362" height="660" id="SciView" order="6" weight="0.26385927" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" auto_hide="true" x="980" y="680" width="771" height="268" id="Debug" order="16" sideWeight="0.58794326" weight="0.50341064" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
       <window_info id="Favorites" order="0" sideWeight="0.50477487" side_tool="true" weight="0.20425531" />
     </layout-to-restore>
@@ -710,7 +728,8 @@
     <MESSAGE value="dex加壳支持" />
     <MESSAGE value="https也是可以抓包抓到请求头的，改了改脚本又能用了。。" />
     <MESSAGE value="csdn自动发消息" />
-    <option name="LAST_COMMIT_MESSAGE" value="csdn自动发消息" />
+    <MESSAGE value="三位一体" />
+    <option name="LAST_COMMIT_MESSAGE" value="三位一体" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -730,11 +749,6 @@
           <line>43</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/csdn/CSDNSendMsg.py</url>
-          <line>64</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -747,7 +761,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/cv2/__init__.py" />
     <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/-1154059523/cv2/cv2/__init__.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/re.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/bs4/element.py" />
@@ -996,17 +1009,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/urllib3/connectionpool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="856" selection-start-line="856" selection-end-line="856" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/csdn/CsdnFlow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="72" column="33" lean-forward="true" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+        <state relative-caret-position="209">
+          <caret line="92" column="23" lean-forward="true" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/csdn/CSDNSendMsg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
+        <state relative-caret-position="95">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

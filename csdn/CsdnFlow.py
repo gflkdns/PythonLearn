@@ -35,7 +35,10 @@ def follow(username):
              "username={username}" \
              "&jsonpcallback=jQuery190003126168270004337_1533532739748" \
              "&_=1533532739752".format(username=username)
-    r = requests.get(follow, headers=headers, verify=False, )
+    try:
+        r = requests.get(follow, headers=headers, verify=False, )
+    except:
+        pass
     print("follow:", username,
           "status_code:", r.status_code,
           "message:", r.content
@@ -49,7 +52,10 @@ followedUsers = []
 def getUserId(user):
     url = 'https://my.csdn.net/{userid}'.format(userid=user)
     print("开始爬取：")
-    r = requests.get(url, headers=headers, verify=False)
+    try:
+        r = requests.get(url, headers=headers, verify=False)
+    except:
+        pass
     if r.ok:
         r.raise_for_status()
         r.encoding = 'utf-8'
@@ -70,20 +76,27 @@ def getUserId(user):
 
 def unFollow(username):
     url = "https://my.csdn.net/index.php/my/follow/do_unfollow"
-    r = requests.post(url, data={
-        "username": username
-    }, headers=headers, verify=False, )
-    if r.ok:
-        print("un follow:", username)
-    else:
-        print("un follow ", username, " error")
+    try:
+        r = requests.post(url, data={
+            "username": username
+        }, headers=headers, verify=False, )
+        if r.ok:
+            print("un follow:", username)
+        else:
+            print("un follow ", username, " error")
+    except:
+        pass
+
 
 
 def getFollowMyUser():
     for i in range(50):
 
         url = 'https://my.csdn.net/my/follow/{page}'.format(page=i)
-        r = requests.get(url, headers=headers, verify=False)
+        try:
+            r = requests.get(url, headers=headers, verify=False)
+        except:
+            pass
         r.raise_for_status()
         r.encoding = 'utf-8'
         data = r.text

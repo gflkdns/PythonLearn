@@ -27,9 +27,9 @@ headers = {
               ' UserInfo=516ZoXsRpXNZVFVGH2xffreDWYzmqhRd%2FPjQLP5E3cgKhwAZP2g0j2UUVMxpPV8YnDf1vvRCE7AKkIQNrB4xWyZQ8LqmbWFWcTZCEE0nt%2B1SjCJ0UTXxgeN0oAHvPF4ZXDtdRiwBUP4Yq%2BDpKVXibA%3D%3D;'
               ' UserNick=%E7%97%95%E8%BF%B9%E4%B8%B6;'
               ' AU=31E; BT=1533529462474; '
-              'UserToken=516ZoXsRpXNZVFVGH2xffreDWYzmqhRd%2FPjQLP5E3cgKhwAZP2g0j2UUVMxpPV8YnDf1vvRCE7'
-              'AKkIQNrB4xWyZQ8LqmbWFWcTZCEE0nt%2B1SjCJ0UTXxgeN0oAHvPF4Z%2F%2Fg9Qg%2Bu1QGldHvsTz5dbi2xCE'
-              'Cl9rSvzPnwp1K%2Fi6zs3BXOd7V7mf74RyRZ5agg; dc_tos=pd0ux1; Hm_lpvt_6bcd52f51e9b3dce32bec4a3997715ac=1533529477'
+              'UserToken=516ZoXsRpXNZVFVGH2xffreDWYzmqhRd%2FPjQLP5E3cgK'
+              'hwAZP2g0j2UUVMxpPV8YnDf1vvRCE7AKkIQNrB4xWyZQ8LqmbWFWcTZCEE0nt%2B1SjCJ0UTXxgeN0oAHvPF4Z%'
+              '2F%2Fg9Qg%2Bu1QGldHvsTz5dbi2xCECl9rSvzPnwp1K%2Fi6zs3BXOd7V7mf74RyRZ5agg'
 }
 
 followedUsers = []
@@ -41,7 +41,10 @@ def sendMesage(userid, message):
           "&body={message}" \
         .format(userid=userid, message=urllib.parse.quote(message))
     print("发消息：receiver={userid}&body={message}".format(userid=userid, message=urllib.parse.quote(message)))
-    r = requests.get(url, headers=headers, verify=False)
+    try:
+        r = requests.get(url, headers=headers, verify=False)
+    except:
+        pass
     if r.ok:
         r.raise_for_status()
         r.encoding = 'utf-8'
@@ -65,7 +68,7 @@ def getUserId(user):
             if i != '' and i not in followedUsers:
                 print('------------------------------------------------')
                 # 发消息
-                sendMesage(i, "代码已经传上去了https://github.com/miqt/MVPHotFix")
+                sendMesage(i, "代码传了 https://github.com/miqt/MVPHotFix ,你可以看看")
                 sendMesage(i, "sorry,发错了。。")
                 # 关注
                 follow(i)
@@ -80,7 +83,8 @@ def getUserId(user):
 
 
 if __name__ == '__main__':
-    getUserId('qq_30137611')
+    # 。。母体。。
+    getUserId('chenbang110')
     for i in followedUsers:
         # 迭代
         getUserId(i)

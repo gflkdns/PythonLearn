@@ -3,6 +3,8 @@ import requests
 import urllib.parse
 from bs4 import BeautifulSoup
 
+from csdn.CsdnFlow import follow, unFollow
+
 headers = {
     'Host': 'my.csdn.net',
     'Connection': 'keep-alive',
@@ -36,8 +38,8 @@ followedUsers = []
 def sendMesage(userid, message):
     url = "http://msg.csdn.net/letters/send_message" \
           "?receiver={userid}" \
-          "&body={message}"\
-        .format(userid=userid,message=urllib.parse.quote(message))
+          "&body={message}" \
+        .format(userid=userid, message=urllib.parse.quote(message))
     print("发消息：receiver={userid}&body={message}".format(userid=userid, message=urllib.parse.quote(message)))
     r = requests.get(url, headers=headers, verify=False)
     if r.ok:
@@ -61,18 +63,24 @@ def getUserId(user):
             i = i[10:-1]
             # 不为空并且没有关注过
             if i != '' and i not in followedUsers:
+                print('------------------------------------------------')
                 # 发消息
                 sendMesage(i, "代码已经传上去了https://github.com/miqt/MVPHotFix")
                 sendMesage(i, "sorry,发错了。。")
+                # 关注
+                follow(i)
+                # 取消关注
+                unFollow(i)
                 # 放入已发消息列表
                 followedUsers.append(i)
+                print('------------------------------------------------')
 
     else:
         print("用户获取失败！", r.status_code)
 
 
 if __name__ == '__main__':
-    getUserId('zxm342698145')
+    getUserId('qq_30137611')
     for i in followedUsers:
         # 迭代
         getUserId(i)

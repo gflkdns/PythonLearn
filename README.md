@@ -37,14 +37,17 @@ http://yy2107hs.top/wd1.html
 ![](http://img2.ph.126.net/YsfOZ-IxEyQkbrnOFkWSKQ==/1276770494379233603.png)
 
 [实现过程详细介绍](http://imaster.top/2018/01/16/%E5%88%A9%E7%94%A8python%E5%88%86%E6%9E%902018%E6%99%BA%E8%81%94%E6%8B%9B%E8%81%98%E5%85%A8%E5%9B%BD%E5%90%84%E4%B8%AA%E5%9F%8E%E5%B8%82%E8%A1%8C%E4%B8%9A%E8%81%8C%E4%BD%8D%E6%95%B0%E6%8E%92%E5%90%8D/)
-### CSDNDemo.py (爬虫刷CSDN访问量)
+### csdn/CSDNDemo.py (爬虫刷CSDN访问量)
 
 一不小心刷了10多万,赶紧停手[笑哭].
 
-### CsdnFlow.py (CSDN自动关注其他用户)
+### csdn/CsdnFlow.py (CSDN自动关注其他用户)
 
 想法来源于之前在github看到的一个项目,刷github的粉丝,原理是用python爬虫取到用户id批量关注,然后过一段时间检查有没有互粉,没有的话就批量取消关注.这个可以说是CSDN版吧...
 ps：近期发现csdn已经换了https了，https也是可以抓包抓到请求头的，改了改脚本又能用了。只是要忽略下证书验证。
+### csdn/CSDNSendMsg.py (CSDN自动发私信)
+
+csdn这接口安全性真的是有问题，私信接口get请求，抓包直接能看到。。。，而且我发现有一部分接口还没有转到https上面。
 
 ### douban.py (获取豆瓣某部电影的所有影评)
 

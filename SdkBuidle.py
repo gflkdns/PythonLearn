@@ -1,17 +1,31 @@
 import os
+import re
 import shutil
 import datetime
 import sys, getopt
 
 '''
-make.py -v [versionName] -n [releaseNote] -r [outPath] --d
+运行环境：
+Python v3.6.4 并配置环境变量
+java 1.7+ 并配置环境变量
+android studio 中的 gradlew工具，linux中使用gradlew.bat
+
+使用方法：
+打开cmd终端cd到项目目录，运行以下命令：
+
+python make.py -v [版本名] -n [版本说明] -r [输出目录] --d
+
+-v [版本名]
+-n [版本说明]
+-r [输出目录] 
+--d 不需要传参，代表是否仅生成dex
 '''
 # 脚本配置
 versions = 'v9.0.1'  # SDK版本 可使用命令 -v ... 设置
 root = './luomi'  # 保存sdk相关文件的目录 可使用命令 -r ... 设置
 releaseNote = '暂无版本说明'  # 可使用命令 -n ... 设置
 onlydex = False  # 可使用命令 --onlydex ... 设置
-salt = 0x2
+salt = 0x2  # 加密盐
 
 # 固定的文件路径
 assetsPath = "./luomilib/src/main/assets/gg.png"  # assets下的dex文件名称
@@ -44,6 +58,8 @@ def makedex():
     os.system(cmd)
     # cmd = "jar tvf {dexPath}".format(dexPath=dexPath)
     # os.system(cmd)
+
+
 def makeAar():
     if os.path.exists(assetsPath):
         os.remove(assetsPath)
@@ -127,10 +143,24 @@ def saveLog():
         f.write("版本说明： {v}  \n".format(v=releaseNote))
 
 
+def replaceFile(filepath, pattern, repl):
+    with open(filepath, 'r+', encoding='utf-8') as f:
+        str = f.read()
+        if str.find('//target') != -1:
+            result, number = re.subn(pattern, repl, str)
+        print(result)
+        print(number)
+        f.seek(0)
+        f.truncate(len(str))
+        f.write(result)
+
+
 if __name__ == '__main__':
     parseArg()
     start_time = datetime.datetime.now()
     print('----------构建开始------------')
+    replaceFile('DexCfg.java', r'"dex_.*"', '"dex_{versions}"'.format(versions=versions))
+    replaceFile('LibCfg.java', r'"lib_.*"', '"lib_{versions}"'.format(versions=versions))
     init()
     print('----------build清除完成-------')
     makedex()

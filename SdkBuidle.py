@@ -1,8 +1,12 @@
+# !/usr/bin/python3
+# coding: utf-8
 import os
 import re
 import shutil
 import datetime
 import sys, getopt
+from ftp import ftp_config
+from ftp import ftp_client
 
 '''
 运行环境：
@@ -17,7 +21,7 @@ python make.py -v [版本名] -n [版本说明] -r [输出目录] --d
 
 -v [版本名]
 -n [版本说明]
--r [输出目录] 
+-r [输出目录]
 --d 不需要传参，代表是否仅生成dex
 '''
 # 脚本配置
@@ -25,6 +29,7 @@ versions = 'v9.0.1'  # SDK版本 可使用命令 -v ... 设置
 root = './luomi'  # 保存sdk相关文件的目录 可使用命令 -r ... 设置
 releaseNote = '暂无版本说明'  # 可使用命令 -n ... 设置
 onlydex = False  # 可使用命令 --onlydex ... 设置
+isUploadDexToFtp = False  # 可使用命令 --ftp ... 设置
 salt = 0x2  # 加密盐
 
 # 固定的文件路径
@@ -114,8 +119,8 @@ def makeAar():
 
 
 def parseArg():
-    global releaseNote, versions, root, dexPath, aarPath, logFilePath, onlydex
-    opts, args = getopt.getopt(sys.argv[1:], 'n:v:r:', ["d"])
+    global releaseNote, versions, root, dexPath, aarPath, logFilePath, onlydex, isUploadDexToFtp
+    opts, args = getopt.getopt(sys.argv[1:], 'n:v:r:', ["d", "ftp"])
     for opt, arg in opts:
         if opt == '-n':
             releaseNote = arg
@@ -125,6 +130,8 @@ def parseArg():
             root = arg
         elif opt == '--d':
             onlydex = True
+        elif opt == '--ftp':
+            isUploadDexToFtp = True
     dexPath = '{root}/luomi_{versions}.dex'.format(root=root, versions=versions)
     aarPath = '{root}/luomi_{versions}.aar'.format(root=root, versions=versions)
     logFilePath = '{root}/打包日志.txt'.format(root=root)
@@ -155,15 +162,43 @@ def replaceFile(filepath, pattern, repl):
         f.write(result)
 
 
+def uploadDex():
+    result = ftp_client.getConnect(
+        host=ftp_config.host,
+        port=ftp_config.port,
+        username=ftp_config.username,
+        password=ftp_config.password
+    )
+
+    if result[0] != 1:
+        print(result[1])
+        print("connection error")
+    else:
+        print("connection success")
+        ftp = result[2]
+        result = ftp_client.uploadFile(
+            ftp=ftp,
+            remoteRelDir=ftp_config.homeDir,
+            localAbsPath=dexPath
+        )
+        ftp.quit()
+        print("全部成功" if result[0] == 1 else "部分失败")
+        print(result[1])
+
+
 if __name__ == '__main__':
     parseArg()
     start_time = datetime.datetime.now()
     print('----------构建开始------------')
-    replaceFile('DexCfg.java', r'"dex_.*"', '"dex_{versions}"'.format(versions=versions))
-    replaceFile('LibCfg.java', r'"lib_.*"', '"lib_{versions}"'.format(versions=versions))
+    replaceFile('./luomidex/src/main/java/com/hz/yl/DexCfg.java', r'"dex_.*"',
+                '"dex_{versions}"'.format(versions=versions))
+    replaceFile('./luomilib/src/main/java/com/hz/yl/LibCfg.java', r'"lib_.*"',
+                '"lib_{versions}"'.format(versions=versions))
     init()
     print('----------build清除完成-------')
     makedex()
+    if isUploadDexToFtp:
+        uploadDex()
     print('----------dex打包完成---------')
     if not onlydex:
         makeAar()

@@ -45,6 +45,8 @@ clearPaths = [
 jarPath = './luomidex/build/intermediates/bundles/release/classes.jar'
 releaseAarPath = './luomilib/build/outputs/aar/luomilib-release.aar'
 
+build_result = {}
+
 
 def init():
     if not os.path.exists(root):
@@ -60,7 +62,7 @@ def makedex():
     cmd = 'gradlew luomidex:assembleRelease'
     os.system(cmd)
     cmd = "dx --dex --output={dexPath} {jarPath}".format(dexPath=dexPath, jarPath=jarPath)
-    os.system(cmd)
+    build_result['makedex'] = os.system(cmd)
     # cmd = "jar tvf {dexPath}".format(dexPath=dexPath)
     # os.system(cmd)
 
@@ -112,7 +114,7 @@ def makeAar():
                 output.write(bytes([byte ^ salt]))
     print('dex encode success!')
     cmd = 'gradlew luomilib:assembleRelease'
-    os.system(cmd)
+    build_result['makeaar'] = os.system(cmd)
     if os.path.exists(aarPath):
         os.remove(aarPath)
     os.rename(releaseAarPath, aarPath)
@@ -135,6 +137,8 @@ def parseArg():
     dexPath = '{root}/luomi_{versions}.dex'.format(root=root, versions=versions)
     aarPath = '{root}/luomi_{versions}.aar'.format(root=root, versions=versions)
     logFilePath = '{root}/打包日志.txt'.format(root=root)
+    build_result['opts'] = opts
+    build_result['args'] = args
 
 
 def saveLog():
@@ -148,6 +152,7 @@ def saveLog():
         if not onlydex:
             f.write("aar路径： {v}  \n".format(v=aarPath))
         f.write("版本说明： {v}  \n".format(v=releaseNote))
+        f.write("打包结果:{v}  \n".format(v=build_result))
 
 
 def replaceFile(filepath, pattern, repl):
@@ -160,6 +165,7 @@ def replaceFile(filepath, pattern, repl):
         f.seek(0)
         f.truncate(len(str))
         f.write(result)
+    build_result['replaceFile'] = 'success'
 
 
 def uploadDex():
@@ -184,6 +190,7 @@ def uploadDex():
         ftp.quit()
         print("全部成功" if result[0] == 1 else "部分失败")
         print(result[1])
+    build_result['uploadDex'] = result
 
 
 if __name__ == '__main__':
@@ -207,3 +214,4 @@ if __name__ == '__main__':
 
     print('----------构建结束,用时{time}------------'.format(time=build_time))
     print('----------save dir = {root}'.format(root=root))
+    print(build_result)

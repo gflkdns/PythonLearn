@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="3ee67a41-363b-478b-aafd-8a05ee9996b7" name="发邮件" comment="发邮件" />
-    <list default="true" id="5f8b8fb4-847d-496c-8f35-084e069df5bb" name="Default" comment="构建脚本支持同步config代码">
-      <change afterPath="$PROJECT_DIR$/ftp/ftp_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ftp/ftp_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ftp/test.py" afterDir="false" />
+    <list default="true" id="5f8b8fb4-847d-496c-8f35-084e069df5bb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SdkBuidle.py" beforeDir="false" afterPath="$PROJECT_DIR$/SdkBuidle.py" afterDir="false" />
     </list>
+    <list id="3ee67a41-363b-478b-aafd-8a05ee9996b7" name="发邮件" comment="发邮件" />
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,45 +37,24 @@
     <favorites_list name="PythonLearn" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SdkBuidle.py" pinned="false" current-in-tab="false">
+    <leaf>
+      <file leaf-file-name="Math.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Math.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="11" selection-start-column="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SdkBuidle.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SdkBuidle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
+            <state relative-caret-position="168">
+              <caret line="210" column="17" lean-forward="true" selection-start-line="210" selection-start-column="17" selection-end-line="210" selection-end-column="17" />
               <folding>
                 <element signature="e#36#45#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ftp_config.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ftp/ftp_config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ftp/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="1" selection-end-column="15" />
-              <folding>
-                <element signature="e#36#65#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ftp_client.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ftp/ftp_client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1544">
-              <caret line="247" column="46" selection-start-line="247" selection-start-column="34" selection-end-line="247" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -157,8 +133,8 @@
         <option value="$PROJECT_DIR$/FtpConn.py" />
         <option value="$PROJECT_DIR$/ftp/FtpConn.py" />
         <option value="$PROJECT_DIR$/ftp/test.py" />
-        <option value="$PROJECT_DIR$/SdkBuidle.py" />
         <option value="$PROJECT_DIR$/ftp/ftp_config.py" />
+        <option value="$PROJECT_DIR$/SdkBuidle.py" />
       </list>
     </option>
   </component>
@@ -633,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537330703488</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="构建脚本支持自动上传ftp">
+      <created>1537844183418</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1537844183418</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView">
@@ -652,62 +635,62 @@
       <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49716312" weight="0.32717392" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5241135" side_tool="true" weight="0.24829468" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="1" sideWeight="0.4815603" visible="true" weight="0.23639455" />
+      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.4815603" visible="true" weight="0.23639455" />
       <window_info anchor="bottom" id="Python Console" order="2" sideWeight="0.4822695" weight="0.32469305" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.74822694" weight="0.20918368" />
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.47588652" weight="0.3383356" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4952251" visible="true" weight="0.29425114" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4952251" visible="true" weight="0.2987897" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.4971146" weight="0.32598424" />
       <window_info anchor="right" x="297" y="244" width="1362" height="660" id="SciView" order="6" weight="0.26385927" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" sideWeight="0.50477487" side_tool="true" weight="0.20425531" />
       <window_info anchor="bottom" auto_hide="true" x="980" y="680" width="771" height="268" id="Debug" order="16" sideWeight="0.58794326" weight="0.502455" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32934782" />
       <window_info anchor="bottom" id="Salesforce" order="13" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Data View" order="4" weight="0.32937893" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Debug Logs" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Debug Logs" order="11" />
-      <window_info anchor="bottom" id="Execute Anonymous" order="12" />
-      <window_info anchor="right" x="0" y="0" width="342" height="726" id="Documentation" order="7" visible="true" weight="0.06769723" />
       <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="right" id="Data View" order="4" weight="0.32937893" />
+      <window_info anchor="right" x="0" y="0" width="342" height="726" id="Documentation" order="7" visible="true" weight="0.06769723" />
+      <window_info anchor="bottom" id="Execute Anonymous" order="12" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.4971146" weight="0.32598424" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32934782" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Salesforce" order="13" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Debug Logs" order="11" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4952251" visible="true" weight="0.36620468" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.74822694" visible="true" weight="0.19021739" />
-      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info id="Favorites" order="0" sideWeight="0.50477487" side_tool="true" weight="0.20425531" />
       <window_info anchor="right" id="Data View" order="4" weight="0.32937893" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49716312" weight="0.32742155" />
+      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.4815603" weight="0.32605729" />
+      <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" sideWeight="0.4971146" weight="0.32707775" />
-      <window_info anchor="bottom" id="Python Console" order="2" sideWeight="0.4822695" weight="0.32469305" />
-      <window_info anchor="bottom" auto_hide="true" x="980" y="680" width="771" height="268" id="Debug" order="16" sideWeight="0.58794326" weight="0.50341064" />
       <window_info anchor="right" x="0" y="0" width="342" height="726" id="Documentation" order="7" visible="true" weight="0.06769723" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" auto_hide="true" x="980" y="680" width="771" height="268" id="Debug" order="16" sideWeight="0.58794326" weight="0.50341064" />
       <window_info anchor="bottom" id="Execute Anonymous" order="12" />
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.47588652" weight="0.3383356" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5241135" side_tool="true" weight="0.24829468" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.4815603" weight="0.32605729" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32934782" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" x="297" y="244" width="1362" height="660" id="SciView" order="6" weight="0.26385927" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32934782" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
-      <window_info id="Favorites" order="0" sideWeight="0.50477487" side_tool="true" weight="0.20425531" />
+      <window_info anchor="bottom" id="Python Console" order="2" sideWeight="0.4822695" weight="0.32469305" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -762,7 +745,8 @@
     <MESSAGE value="csdn自动发消息" />
     <MESSAGE value="三位一体" />
     <MESSAGE value="构建脚本支持同步config代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="构建脚本支持同步config代码" />
+    <MESSAGE value="构建脚本支持自动上传ftp" />
+    <option name="LAST_COMMIT_MESSAGE" value="构建脚本支持自动上传ftp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -794,7 +778,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/draw/1515490325119.jpeg" />
     <entry file="file://$PROJECT_DIR$/draw/a.png" />
     <entry file="file://$PROJECT_DIR$/draw/mb.jpeg" />
     <entry file="file://$PROJECT_DIR$/draw/sumiao.jpg" />
@@ -970,13 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Math.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ZhiLian.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -1017,17 +993,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="304">
             <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1049,9 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="63" column="37" lean-forward="true" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1066,33 +1039,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="1" selection-end-column="15" />
-          <folding>
-            <element signature="e#36#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ftp/ftp_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1544">
-          <caret line="247" column="46" selection-start-line="247" selection-start-column="34" selection-end-line="247" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SdkBuidle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
-          <folding>
-            <element signature="e#36#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ftp/ftp_config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="76">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ftp/ftp_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="119" column="31" lean-forward="true" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Math.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/1719703418/nt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="546" column="4" selection-start-line="546" selection-start-column="4" selection-end-line="546" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SdkBuidle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="210" column="17" lean-forward="true" selection-start-line="210" selection-start-column="17" selection-end-line="210" selection-end-column="17" />
+          <folding>
+            <element signature="e#36#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

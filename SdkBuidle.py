@@ -11,18 +11,20 @@ from ftp import ftp_client
 '''
 运行环境：
 Python v3.6.4 并配置环境变量
+import中对应的三方库
 java 1.7+ 并配置环境变量
 android studio 中的 gradlew工具，linux中使用gradlew.bat
 
 使用方法：
 打开cmd终端cd到项目目录，运行以下命令：
 
-python make.py -v [版本名] -n [版本说明] -r [输出目录] --d
+python make.py -v [版本名] -n [版本说明] -r [输出目录] --d  --ftp
 
 -v [版本名]
 -n [版本说明]
 -r [输出目录]
 --d 不需要传参，代表是否仅生成dex
+--ftp 是否将生成的dex上传到指定ftp服务器
 '''
 # 脚本配置
 versions = 'v9.0.1'  # SDK版本 可使用命令 -v ... 设置
@@ -139,6 +141,7 @@ def parseArg():
     logFilePath = '{root}/打包日志.txt'.format(root=root)
     build_result['opts'] = opts
     build_result['args'] = args
+    build_result['releaseNote'] = releaseNote
 
 
 def saveLog():
@@ -192,6 +195,16 @@ def uploadDex():
         print(result[1])
     build_result['uploadDex'] = result
 
+def git_tag():
+    print('-----创建Git Tag-----')
+    cmd = 'git tag -a {v} -m {m}'.format(v=versions, m=releaseNote)
+    os.system(cmd)
+    if isUploadDexToFtp:
+        # 如果上传dex到ftp，那么也上传这个标签到远程仓库比较好
+        print('-----验证仓库权限-----')
+        cmd = 'git push origin {v}'.format(v=versions)
+        os.system(cmd)
+
 
 if __name__ == '__main__':
     parseArg()
@@ -211,6 +224,7 @@ if __name__ == '__main__':
         makeAar()
     build_time = datetime.datetime.now() - start_time
     saveLog()
+    git_tag()
 
     print('----------构建结束,用时{time}------------'.format(time=build_time))
     print('----------save dir = {root}'.format(root=root))

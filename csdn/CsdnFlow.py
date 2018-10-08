@@ -53,25 +53,26 @@ def getUserId(user):
     url = 'https://my.csdn.net/{userid}'.format(userid=user)
     print("开始爬取：")
     try:
-        r = requests.get(url, headers=headers, verify=False)
+        r = requests.get(url, headers=headers)
+        if r.ok:
+            r.raise_for_status()
+            r.encoding = 'utf-8'
+            rr = "username='[^<>]*'"
+            a = re.findall(rr, r.text, 0)
+            for i in a:
+                i = i[10:-1]
+                # 不为空并且没有关注过
+                if i != '' and i not in followedUsers:
+                    # 关注
+                    follow(i)
+                    # 放入已经关注列表
+                    followedUsers.append(i)
+
+        else:
+            print("用户获取失败！", r.status_code)
     except:
         pass
-    if r.ok:
-        r.raise_for_status()
-        r.encoding = 'utf-8'
-        rr = "username='[^<>]*'"
-        a = re.findall(rr, r.text, 0)
-        for i in a:
-            i = i[10:-1]
-            # 不为空并且没有关注过
-            if i != '' and i not in followedUsers:
-                # 关注
-                follow(i)
-                # 放入已经关注列表
-                followedUsers.append(i)
 
-    else:
-        print("用户获取失败！", r.status_code)
 
 
 def unFollow(username):

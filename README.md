@@ -57,4 +57,12 @@ csdn这接口安全性真的是有问题，私信接口get请求，抓包直接�
 
 ### SdkBuidle.py 
 
-android studio 辅助构建工具，项目打包的时候需要进行频繁的拷贝，运行dx命令等，十分重复繁琐，脚本通过调用gradlew打包sdk相关文件。
+android studio 辅助构建工具，项目打包的时候需要进行频繁的拷贝，运行dx命令等，十分重复繁琐，脚本通过调用gradlew打包sdk相关文件。还支持ftp等功能。
+
+### ftp/ftp.py
+
+ftp上传下载工具
+
+### FileEnc.py
+
+将任意一个文件加密变成一张笑脸图片，但可以解密回原文件

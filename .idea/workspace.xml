@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list id="3ee67a41-363b-478b-aafd-8a05ee9996b7" name="发邮件" comment="发邮件" />
     <list default="true" id="5f8b8fb4-847d-496c-8f35-084e069df5bb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/image_marge/AbsRGB.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_marge/ColorXL.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_marge/MargeHSV.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_marge/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_marge/PILDemo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SdkBuidle.py" beforeDir="false" afterPath="$PROJECT_DIR$/SdkBuidle.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,6 +26,7 @@
     <SUITE FILE_PATH="coverage/PythonLearn$FileEnc.coverage" NAME="FileEnc Coverage Results" MODIFIED="1531444601007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$CsdnFlow.coverage" NAME="CsdnFlow Coverage Results" MODIFIED="1533534336992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$ImgClassify.coverage" NAME="ImgClassify Coverage Results" MODIFIED="1541559790152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonLearn$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1543917536771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$test.coverage" NAME="test Coverage Results" MODIFIED="1538104872533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ftp" />
     <SUITE FILE_PATH="coverage/PythonLearn$CSDNSendMsg.coverage" NAME="CSDNSendMsg Coverage Results" MODIFIED="1537841030192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csdn" />
     <SUITE FILE_PATH="coverage/PythonLearn$lapblas.coverage" NAME="lapblas Coverage Results" MODIFIED="1516609348530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mehu" />
@@ -35,6 +34,7 @@
     <SUITE FILE_PATH="coverage/PythonLearn$findfile.coverage" NAME="findfile Coverage Results" MODIFIED="1518080755216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/findMM" />
     <SUITE FILE_PATH="coverage/PythonLearn$CsdnFlow__1_.coverage" NAME="CsdnFlow (1) Coverage Results" MODIFIED="1538990394163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csdn" />
     <SUITE FILE_PATH="coverage/PythonLearn$Tu.coverage" NAME="Tu Coverage Results" MODIFIED="1514861849978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonLearn$PILDemo.coverage" NAME="PILDemo Coverage Results" MODIFIED="1542077827734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/image_marge" />
     <SUITE FILE_PATH="coverage/PythonLearn$convert_obj_three.coverage" NAME="convert_obj_three Coverage Results" MODIFIED="1515999042194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/line" />
     <SUITE FILE_PATH="coverage/PythonLearn$MargeHSV.coverage" NAME="MargeHSV Coverage Results" MODIFIED="1541559770422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/image_marge" />
   </component>
@@ -57,11 +57,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ImgClassify.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ImgClassify.py">
+      <file leaf-file-name="SdkBuidle.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SdkBuidle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="79" column="17" lean-forward="true" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
+            <state relative-caret-position="-1575">
+              <caret line="141" column="29" lean-forward="true" selection-start-line="141" selection-start-column="29" selection-end-line="141" selection-end-column="29" />
+              <folding>
+                <element signature="e#36#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -90,17 +102,17 @@
       <find>post</find>
       <find>httpss</find>
       <find>csdn</find>
-      <find>\n</find>
-      <find>ftp_cfg_local</find>
       <find>\</find>
+      <find>ftp_cfg_local</find>
+      <find>\n</find>
     </findStrings>
     <replaceStrings>
       <replace>新股申购</replace>
       <replace>write</replace>
       <replace>fromAddress</replace>
       <replace>https</replace>
-      <replace>ftp_config</replace>
       <replace>/</replace>
+      <replace>ftp_config</replace>
     </replaceStrings>
     <dirStrings>
       <dir>F:\PythonLearn</dir>
@@ -126,7 +138,6 @@
         <option value="$PROJECT_DIR$/line.py" />
         <option value="$PROJECT_DIR$/line/convert_obj_three.py" />
         <option value="$PROJECT_DIR$/ZhiLian.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/com/miqt/py/Dog.py" />
         <option value="$PROJECT_DIR$/findMM/findfile.py" />
         <option value="$PROJECT_DIR$/line/line.py" />
@@ -140,7 +151,6 @@
         <option value="$PROJECT_DIR$/FtpConn.py" />
         <option value="$PROJECT_DIR$/ftp/FtpConn.py" />
         <option value="$PROJECT_DIR$/ftp/ftp_config.py" />
-        <option value="$PROJECT_DIR$/SdkBuidle.py" />
         <option value="$PROJECT_DIR$/csdn/CsdnFlow.py" />
         <option value="$PROJECT_DIR$/ftp/test.py" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -151,6 +161,9 @@
         <option value="$PROJECT_DIR$/image_marge/readme.md" />
         <option value="$PROJECT_DIR$/image_marge/MargeHSV.py" />
         <option value="$PROJECT_DIR$/ImgClassify.py" />
+        <option value="$PROJECT_DIR$/image_marge/PILDemo.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/SdkBuidle.py" />
       </list>
     </option>
   </component>
@@ -201,7 +214,7 @@
             <path>
               <item name="PythonLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="image_marge" type="462c0819:PsiDirectoryNode" />
+              <item name="ftp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -243,26 +256,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ImgClassify">
-    <configuration name="CSDNSendMsg" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonLearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/csdn" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/csdn/CSDNSendMsg.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.test (1)">
     <configuration name="CsdnFlow (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -339,6 +333,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="PILDemo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/image_marge" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_marge/PILDemo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="file_io" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -358,7 +371,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -366,12 +379,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ftp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ftp/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -380,19 +393,19 @@
     <list>
       <item itemvalue="Python.file_io" />
       <item itemvalue="Python.Math" />
-      <item itemvalue="Python.CSDNSendMsg" />
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.CsdnFlow (1)" />
       <item itemvalue="Python.MargeHSV" />
       <item itemvalue="Python.ImgClassify" />
+      <item itemvalue="Python.PILDemo" />
+      <item itemvalue="Python.test (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.PILDemo" />
         <item itemvalue="Python.ImgClassify" />
         <item itemvalue="Python.MargeHSV" />
         <item itemvalue="Python.CsdnFlow (1)" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.CSDNSendMsg" />
       </list>
     </recent_temporary>
   </component>
@@ -653,7 +666,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539748684875</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="千图成像">
+      <created>1541560187557</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1541560187557</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView">
@@ -669,64 +689,64 @@
     <frame x="1912" y="748" width="1382" height="784" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49716312" weight="0.32717392" />
-      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5241135" side_tool="true" weight="0.24829468" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.4815603" weight="0.28184712" />
       <window_info anchor="bottom" id="Python Console" order="2" sideWeight="0.4822695" weight="0.32469305" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.74822694" visible="true" weight="0.3343949" />
-      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.47588652" weight="0.3383356" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4952251" visible="true" weight="0.26626325" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.74822694" weight="0.3343949" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.47588652" visible="true" weight="0.3375796" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4952251" visible="true" weight="0.27836612" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
       <window_info anchor="right" x="297" y="244" width="1362" height="660" id="SciView" order="6" weight="0.2632375" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" sideWeight="0.50477487" side_tool="true" weight="0.20425531" />
       <window_info anchor="bottom" auto_hide="true" x="980" y="680" width="771" height="268" id="Debug" order="16" sideWeight="0.58794326" weight="0.50159234" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32934782" />
       <window_info anchor="bottom" id="Salesforce" order="13" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Data View" order="4" weight="0.32937893" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Debug Logs" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Debug Logs" order="11" />
+      <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="right" id="Data View" order="4" weight="0.32937893" />
       <window_info anchor="right" x="0" y="0" width="342" height="726" id="Documentation" order="7" visible="true" weight="0.06769723" />
       <window_info anchor="bottom" id="Execute Anonymous" order="12" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="5" sideWeight="0.4971146" weight="0.32598424" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32934782" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Salesforce" order="13" />
-      <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Debug Logs" order="11" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4952251" visible="true" weight="0.36620468" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.74822694" visible="true" weight="0.19021739" />
-      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info id="Favorites" order="0" sideWeight="0.50477487" side_tool="true" weight="0.20425531" />
       <window_info anchor="right" id="Data View" order="4" weight="0.32937893" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49716312" weight="0.32742155" />
-      <window_info anchor="bottom" id="Python Console" order="2" sideWeight="0.4822695" weight="0.32469305" />
-      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.4815603" weight="0.32605729" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" auto_hide="true" x="980" y="680" width="771" height="268" id="Debug" order="16" sideWeight="0.58794326" weight="0.50341064" />
       <window_info anchor="right" x="0" y="0" width="342" height="726" id="Documentation" order="7" visible="true" weight="0.06769723" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Execute Anonymous" order="12" />
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.47588652" weight="0.3383356" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5241135" side_tool="true" weight="0.24829468" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32934782" />
-      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.4815603" weight="0.32605729" />
-      <window_info anchor="bottom" auto_hide="true" x="980" y="680" width="771" height="268" id="Debug" order="16" sideWeight="0.58794326" weight="0.50341064" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" x="297" y="244" width="1362" height="660" id="SciView" order="6" weight="0.26385927" />
       <window_info anchor="bottom" id="Find" order="5" sideWeight="0.4971146" weight="0.32707775" />
       <window_info anchor="bottom" id="Messages" order="14" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
-      <window_info id="Favorites" order="0" sideWeight="0.50477487" side_tool="true" weight="0.20425531" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32934782" />
+      <window_info anchor="bottom" id="Python Console" order="2" sideWeight="0.4822695" weight="0.32469305" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -794,7 +814,8 @@
     <MESSAGE value="构建脚本支持记录打包结果，便于排除错误" />
     <MESSAGE value="自动打git标签" />
     <MESSAGE value="update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
+    <MESSAGE value="千图成像" />
+    <option name="LAST_COMMIT_MESSAGE" value="千图成像" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -829,6 +850,11 @@
           <line>203</line>
           <option name="timeStamp" value="60" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/image_marge/PILDemo.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -837,12 +863,10 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="62" />
+      <option name="time" value="63" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/draw/res/_at_iteration_2.png" />
-    <entry file="file://$PROJECT_DIR$/CounterDemo.py" />
     <entry file="file://$PROJECT_DIR$/mehu/lapblas.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1035,13 +1059,6 @@
     <entry file="file://$PROJECT_DIR$/image.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Math.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1116,13 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="2642" column="4" selection-start-line="2642" selection-start-column="4" selection-end-line="2642" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/image_marge/MargeHSV.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1133,10 +1143,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ftp/test.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/PIL/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/PIL/Image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        <state relative-caret-position="-840">
+          <caret line="2548" column="23" lean-forward="true" selection-start-line="2548" selection-start-column="23" selection-end-line="2548" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_marge/PILDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImgClassify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1147,13 +1174,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SdkBuidle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="189" column="44" selection-start-line="189" selection-start-column="44" selection-end-line="189" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ftp/ftp_client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -1161,10 +1181,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ImgClassify.py">
+    <entry file="file://$PROJECT_DIR$/ftp/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="79" column="17" lean-forward="true" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
+        <state relative-caret-position="171">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SdkBuidle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1575">
+          <caret line="141" column="29" lean-forward="true" selection-start-line="141" selection-start-column="29" selection-end-line="141" selection-end-column="29" />
+          <folding>
+            <element signature="e#36#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

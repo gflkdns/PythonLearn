@@ -9,22 +9,26 @@ from ftp import ftp_config
 from ftp import ftp_client
 
 '''
-运行环境：
+运行环境：以下为本脚本必要配置
 Python v3.6.4 并配置环境变量
 import中对应的三方库
 java 1.7+ 并配置环境变量
 android studio 中的 gradlew工具，linux中使用gradlew.bat
+android sdk 并配置dx.bat的路径环境变量，否则无法打包dex
+git工具
 
 使用方法：
 打开cmd终端cd到项目目录，运行以下命令：
 
 python make.py -v [版本名] -n [版本说明] -r [输出目录] --d  --ftp
 
--v [版本名]
--n [版本说明]
--r [输出目录]
---d 不需要传参，代表是否仅生成dex
---ftp 是否将生成的dex上传到指定ftp服务器
+--help      [帮助]
+-v          [版本名]
+-n          [版本说明]
+-r          [输出目录，默认为 当前文件夹/luomi]
+--d         不需要传参，代表是否仅生成dex
+--ftp       是否将生成的dex上传到指定ftp服务器，
+            如果配置了此项，还会在脚本执行完毕之后创建Git tag并提交到远程
 '''
 # 脚本配置
 versions = 'v9.0.1'  # SDK版本 可使用命令 -v ... 设置
@@ -134,6 +138,8 @@ def parseArg():
             root = arg
         elif opt == '--d':
             onlydex = True
+        elif opt == '-help':
+            print('请查看代码注释！')
         elif opt == '--ftp':
             isUploadDexToFtp = True
     dexPath = '{root}/luomi_{versions}.dex'.format(root=root, versions=versions)

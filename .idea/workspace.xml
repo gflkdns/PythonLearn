@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="3ee67a41-363b-478b-aafd-8a05ee9996b7" name="发邮件" comment="发邮件" />
     <list default="true" id="5f8b8fb4-847d-496c-8f35-084e069df5bb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/image_marge/PILDemo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qichacha/Qcc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qichacha/qi_CC.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SdkBuidle.py" beforeDir="false" afterPath="$PROJECT_DIR$/SdkBuidle.py" afterDir="false" />
     </list>
+    <list id="3ee67a41-363b-478b-aafd-8a05ee9996b7" name="发邮件" comment="发邮件" />
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,6 +22,7 @@
     <SUITE FILE_PATH="coverage/PythonLearn$line.coverage" NAME="line Coverage Results" MODIFIED="1516609031674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$douyutv.coverage" NAME="douyutv Coverage Results" MODIFIED="1518159510783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$ZhiLian.coverage" NAME="ZhiLian Coverage Results" MODIFIED="1516093530899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonLearn$Qcc.coverage" NAME="Qcc Coverage Results" MODIFIED="1552282939159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qichacha" />
     <SUITE FILE_PATH="coverage/PythonLearn$sendMail.coverage" NAME="sendMail Coverage Results" MODIFIED="1529926827129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$FileEnc.coverage" NAME="FileEnc Coverage Results" MODIFIED="1531444601007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$CsdnFlow.coverage" NAME="CsdnFlow Coverage Results" MODIFIED="1533534336992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -32,7 +33,8 @@
     <SUITE FILE_PATH="coverage/PythonLearn$lapblas.coverage" NAME="lapblas Coverage Results" MODIFIED="1516609348530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mehu" />
     <SUITE FILE_PATH="coverage/PythonLearn$douban.coverage" NAME="douban Coverage Results" MODIFIED="1518152467069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$findfile.coverage" NAME="findfile Coverage Results" MODIFIED="1518080755216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/findMM" />
-    <SUITE FILE_PATH="coverage/PythonLearn$CsdnFlow__1_.coverage" NAME="CsdnFlow (1) Coverage Results" MODIFIED="1538990394163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csdn" />
+    <SUITE FILE_PATH="coverage/PythonLearn$CsdnFlow__1_.coverage" NAME="CsdnFlow (1) Coverage Results" MODIFIED="1552271961194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csdn" />
+    <SUITE FILE_PATH="coverage/PythonLearn$qi_CC.coverage" NAME="qi_CC Coverage Results" MODIFIED="1552288271328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qichacha" />
     <SUITE FILE_PATH="coverage/PythonLearn$Tu.coverage" NAME="Tu Coverage Results" MODIFIED="1514861849978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$PILDemo.coverage" NAME="PILDemo Coverage Results" MODIFIED="1542077827734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/image_marge" />
     <SUITE FILE_PATH="coverage/PythonLearn$convert_obj_three.coverage" NAME="convert_obj_three Coverage Results" MODIFIED="1515999042194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/line" />
@@ -57,23 +59,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SdkBuidle.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SdkBuidle.py">
+      <file leaf-file-name="qi_CC.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/qichacha/qi_CC.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1575">
-              <caret line="141" column="29" lean-forward="true" selection-start-line="141" selection-start-column="29" selection-end-line="141" selection-end-column="29" />
+            <state relative-caret-position="201">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
-                <element signature="e#36#45#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
+      <file leaf-file-name="Qcc.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qichacha/Qcc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="204">
+              <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="46" />
+              <folding>
+                <element signature="e#19#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CsdnFlow.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/csdn/CsdnFlow.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="103" column="49" lean-forward="true" selection-start-line="103" selection-start-column="49" selection-end-line="103" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,7 +168,6 @@
         <option value="$PROJECT_DIR$/FtpConn.py" />
         <option value="$PROJECT_DIR$/ftp/FtpConn.py" />
         <option value="$PROJECT_DIR$/ftp/ftp_config.py" />
-        <option value="$PROJECT_DIR$/csdn/CsdnFlow.py" />
         <option value="$PROJECT_DIR$/ftp/test.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/ftp/ftp_client.py" />
@@ -164,6 +180,9 @@
         <option value="$PROJECT_DIR$/image_marge/PILDemo.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/SdkBuidle.py" />
+        <option value="$PROJECT_DIR$/csdn/CsdnFlow.py" />
+        <option value="$PROJECT_DIR$/qichacha/Qcc.py" />
+        <option value="$PROJECT_DIR$/qichacha/qi_CC.py" />
       </list>
     </option>
   </component>
@@ -176,11 +195,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="748" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2093" />
+    <option name="y" value="816" />
+    <option name="width" value="1098" />
+    <option name="height" value="652" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -214,7 +233,7 @@
             <path>
               <item name="PythonLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="ftp" type="462c0819:PsiDirectoryNode" />
+              <item name="qichacha" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -256,7 +275,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test (1)">
+  <component name="RunManager" selected="Python.qi_CC">
     <configuration name="CsdnFlow (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -271,44 +290,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/csdn/CsdnFlow.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="ImgClassify" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonLearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ImgClassify.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="MargeHSV" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonLearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/image_marge" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_marge/MargeHSV.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -352,6 +333,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="Qcc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qichacha" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qichacha/Qcc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="file_io" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -366,6 +366,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file_io.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="qi_CC" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qichacha" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qichacha/qi_CC.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -394,18 +413,18 @@
       <item itemvalue="Python.file_io" />
       <item itemvalue="Python.Math" />
       <item itemvalue="Python.CsdnFlow (1)" />
-      <item itemvalue="Python.MargeHSV" />
-      <item itemvalue="Python.ImgClassify" />
       <item itemvalue="Python.PILDemo" />
       <item itemvalue="Python.test (1)" />
+      <item itemvalue="Python.qi_CC" />
+      <item itemvalue="Python.Qcc" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.qi_CC" />
+        <item itemvalue="Python.Qcc" />
+        <item itemvalue="Python.CsdnFlow (1)" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.PILDemo" />
-        <item itemvalue="Python.ImgClassify" />
-        <item itemvalue="Python.MargeHSV" />
-        <item itemvalue="Python.CsdnFlow (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -673,7 +692,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541560187557</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="SDK 构建脚本">
+      <created>1552271398214</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1552271398214</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView">
@@ -686,67 +712,67 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="748" width="1382" height="784" extended-state="6" />
+    <frame x="2093" y="816" width="1098" height="652" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49716312" weight="0.32717392" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5241135" side_tool="true" weight="0.24829468" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.4815603" weight="0.28184712" />
-      <window_info anchor="bottom" id="Python Console" order="2" sideWeight="0.4822695" weight="0.32469305" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.74822694" weight="0.3343949" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.47588652" visible="true" weight="0.3375796" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4952251" visible="true" weight="0.27836612" />
+      <window_info anchor="bottom" id="Python Console" order="2" sideWeight="0.4822695" weight="0.32324842" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.74822694" weight="0.3608871" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.47588652" weight="0.33669356" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4952251" visible="true" weight="0.23121387" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
-      <window_info anchor="right" x="297" y="244" width="1362" height="660" id="SciView" order="6" weight="0.2632375" />
+      <window_info anchor="right" id="Database" order="3" weight="0.329718" />
+      <window_info anchor="right" x="297" y="244" width="1362" height="660" id="SciView" order="6" weight="0.2624729" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" sideWeight="0.50477487" side_tool="true" weight="0.20425531" />
-      <window_info anchor="bottom" auto_hide="true" x="980" y="680" width="771" height="268" id="Debug" order="16" sideWeight="0.58794326" weight="0.50159234" />
+      <window_info anchor="bottom" auto_hide="true" x="980" y="680" width="771" height="268" id="Debug" order="16" sideWeight="0.58794326" weight="0.5" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32934782" />
       <window_info anchor="bottom" id="Salesforce" order="13" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+      <window_info anchor="right" id="Data View" order="4" weight="0.32937893" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Debug Logs" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="14" />
-      <window_info anchor="right" id="Data View" order="4" weight="0.32937893" />
+      <window_info anchor="bottom" id="Debug Logs" order="11" />
       <window_info anchor="right" x="0" y="0" width="342" height="726" id="Documentation" order="7" visible="true" weight="0.06769723" />
       <window_info anchor="bottom" id="Execute Anonymous" order="12" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="5" sideWeight="0.4971146" weight="0.32598424" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32934782" />
+      <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Salesforce" order="13" />
       <window_info anchor="bottom" id="Debug Logs" order="11" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4952251" visible="true" weight="0.36620468" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.74822694" visible="true" weight="0.19021739" />
-      <window_info id="Favorites" order="0" sideWeight="0.50477487" side_tool="true" weight="0.20425531" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Data View" order="4" weight="0.32937893" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49716312" weight="0.32742155" />
-      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.4815603" weight="0.32605729" />
-      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.4971146" weight="0.32707775" />
+      <window_info anchor="bottom" id="Python Console" order="2" sideWeight="0.4822695" weight="0.32469305" />
       <window_info anchor="bottom" auto_hide="true" x="980" y="680" width="771" height="268" id="Debug" order="16" sideWeight="0.58794326" weight="0.50341064" />
       <window_info anchor="right" x="0" y="0" width="342" height="726" id="Documentation" order="7" visible="true" weight="0.06769723" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Execute Anonymous" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.47588652" weight="0.3383356" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5241135" side_tool="true" weight="0.24829468" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.4815603" weight="0.32605729" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" x="297" y="244" width="1362" height="660" id="SciView" order="6" weight="0.26385927" />
-      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.4971146" weight="0.32707775" />
-      <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.47588652" weight="0.3383356" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32934782" />
-      <window_info anchor="bottom" id="Python Console" order="2" sideWeight="0.4822695" weight="0.32469305" />
+      <window_info id="Favorites" order="0" sideWeight="0.50477487" side_tool="true" weight="0.20425531" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -815,7 +841,8 @@
     <MESSAGE value="自动打git标签" />
     <MESSAGE value="update readme" />
     <MESSAGE value="千图成像" />
-    <option name="LAST_COMMIT_MESSAGE" value="千图成像" />
+    <MESSAGE value="SDK 构建脚本" />
+    <option name="LAST_COMMIT_MESSAGE" value="SDK 构建脚本" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -855,6 +882,16 @@
           <line>2</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/csdn/CsdnFlow.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/qichacha/qi_CC.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -863,41 +900,10 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="63" />
+      <option name="time" value="70" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mehu/lapblas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/line/convert_obj_three.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="1620" lean-forward="true" selection-start-line="1620" selection-end-line="1620" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/line/Samples/IMG_20170908_180944.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/1719703418/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="2032" column="8" selection-start-line="2032" selection-start-column="8" selection-end-line="2032" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/email/mime/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/smtplib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -965,13 +971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/requests/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-676">
-          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/findMM/IMG20170910141515.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1007,20 +1006,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/re.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-877">
-          <caret line="314" column="33" lean-forward="true" selection-start-line="314" selection-start-column="33" selection-end-line="314" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csdn/CSDNSendMsg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="63" column="37" lean-forward="true" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/ftplib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -1039,13 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="856" selection-start-line="856" selection-end-line="856" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csdn/CsdnFlow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
         </state>
       </provider>
     </entry>
@@ -1167,13 +1145,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ftp/ftp_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ftp/ftp_client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -1197,10 +1168,82 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SdkBuidle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1575">
-          <caret line="141" column="29" lean-forward="true" selection-start-line="141" selection-start-column="29" selection-end-line="141" selection-end-column="29" />
+        <state relative-caret-position="159">
+          <caret line="181" column="26" lean-forward="true" selection-start-line="181" selection-start-column="26" selection-end-line="181" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ftp/ftp_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="213" column="4" selection-start-line="213" selection-start-column="4" selection-end-line="213" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/requests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="70" column="46" lean-forward="true" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csdn/CSDNSendMsg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/bs4/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="809">
+          <caret line="87" column="8" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/bs4/element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="1359" column="8" selection-start-line="1359" selection-start-column="8" selection-end-line="1359" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qichacha/Qcc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="46" />
           <folding>
-            <element signature="e#36#45#0" expanded="true" />
+            <element signature="e#19#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csdn/CsdnFlow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="103" column="49" lean-forward="true" selection-start-line="103" selection-start-column="49" selection-end-line="103" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qichacha/qi_CC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

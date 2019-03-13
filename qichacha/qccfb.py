@@ -55,6 +55,15 @@ def getBranches(keyNo):
         for j in state:
             print("\t\t",j.replace('\n', ':').replace('  ', ''))
 
+
+def getFrGs(keyno, name):
+    url='https://www.qichacha.com/people?name={name}&keyno={keyno}'.format(name=name,keyno=keyno)
+    r = requests.get(url, headers=headers, verify=False)
+    if r.ok:
+        soup = BeautifulSoup(r.text, 'lxml')
+        cvlu=soup.find_all(class_='cvlu')
+        print(cvlu)
+
 def getKeyNo(company_name):
     url = "https://www.qichacha.com/search?key={company_name}".format(company_name=company_name)
     r = requests.get(url, headers=headers, verify=False)
@@ -64,6 +73,11 @@ def getKeyNo(company_name):
         soup = BeautifulSoup(r.text, 'lxml')
         fr = soup.find_all(class_='m-t-xs')
         keyno = fr[0].contents[1].attrs['href'][-32:]
+        name=fr[0].contents[1].contents[0]
+        print("法人：", name)
+        # getFrGs(keyno,name)
+        fr = soup.find_all(class_='nstatus text-success-lt m-l-xs')
+        print('营业状态：', fr[0].string)
         return keyno
 
 

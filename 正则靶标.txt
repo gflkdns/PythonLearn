@@ -1,3 +1,6 @@
+pyinstaller
+
+
 　　[NOR]成都[LOC.ADMIN]飞[NOR]九寨沟[LOC.ADMIN]，
  环球[NOR]影城[LOC.ADDR]有[NOR]好莱坞[LOC.ADDR]、[NOR]纽约[LOC.ADMIN]、科幻城市、古埃及、失落的世界、遥远王国和[NOR]马达加斯加[LOC.ADMIN]7个主题区域。[NOR]3月[TIME.DAY]是淡季、而且是[NOR]周一[TIME.DAY]，门口的人进去后散开了，每个游艺人就不多了。
  完事儿车子继续开往[NOR]环球影城[LOC.ADDR]，不知道自己老了还是怎么的，对于这种主题公园失去了兴趣。。（其实主要还是胆子小。。。）里面推荐的就是[NOR]变形金刚[ENT.FILM]，[NOR]侏罗纪[ENT.FILM]，还有[NOR]未来水世界[ENT.FILM]，[NOR]传说[ENT.FILM]辛普森一家也很赞，不过这种被禁了的动画完全没代入感。。。卑鄙的我主题也还在修建当中。。至于那个环园的游览车，有必要去坐一次，但是完全没必要排长队等中文解说（又是[NOR]中国[LOC.ADMIN]），那个华裔说的中文比椒盐[NOR]川普[PERSON.PERSON_NAME]还听不懂，还不如英语的游览车完全不用排队，反正说的中文内容我也听不懂。

@@ -47,7 +47,13 @@ def getBranches(keyNo):
     print('\n分支机构公司：--强关联')
     for fz in fenzhi:
         print("\t\t", fz.string)
-
+    touzi = soup2.find_all('section', id='touzilist')
+    print('\n对外投资子公司：--100的为强关联')
+    for i in touzi:
+        info = i.contents[3].text
+        state = re.findall(r'\s[^\s]*公司[^%]*%', info,0)
+        for j in state:
+            print("\t\t",j.replace('\n', ':').replace('  ', ''))
 
 def getKeyNo(company_name):
     url = "https://www.qichacha.com/search?key={company_name}".format(company_name=company_name)

@@ -1,4 +1,4 @@
-pyinstaller
+pyinstaller -F
 
 
 　　[NOR]成都[LOC.ADMIN]飞[NOR]九寨沟[LOC.ADMIN]，

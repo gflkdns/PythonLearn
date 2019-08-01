@@ -1,10 +1,11 @@
 # !/usr/bin/python
 # -*- coding:utf8 -*-
-
-
+import getopt
 import time
 
 import shutil, os
+
+import sys
 
 allFileNum = 0
 
@@ -76,18 +77,21 @@ def findFile(fileList, path):
             fileList.append(path + '/' + f)
 
 
+in_path = ''
+out_path = ''
+
+
 def main():
     fileList = []
-    path = 'C:\\Users\Administrator\Desktop\\2017年照片备份'
 
-    findFile(fileList, path)
+    findFile(fileList, in_path)
     print(fileList)
 
     timedir = []
-    print("开始移动" + path)
+    print("开始移动" + in_path)
     for img, i in zip(fileList, range(len(fileList))):
         time = get_FileCreateTime(img)
-        timepath = "D:\\文件备份\\" + time
+        timepath = out_path +'/'+ time
         if time not in timedir:
             # 新建这个日期的文件夹
             os.makedirs(timepath, mode=0o777, exist_ok=True)
@@ -100,4 +104,16 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    opts, args = getopt.getopt(sys.argv[1:], 'o:i:', [ "help"])
+    for opt, arg in opts:
+        if opt == '-i':
+            in_path = arg
+        elif opt == '-o':
+            out_path = arg
+        elif opt == '--help':
+            print('-out 输出文件夹路径 -in 输入图片源文件夹路径')
+            exit()
+    if in_path != '' and out_path!='':
+        main()
+    else:
+        print('缺少重要参数：\n -out 输出路径 -in 输入图片源路径')

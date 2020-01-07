@@ -111,9 +111,9 @@ if __name__ == '__main__':
         elif opt == '-o':
             out_path = arg
         elif opt == '--help':
-            print('-out 输出文件夹路径 -in 输入图片源文件夹路径')
+            print('-o 输出文件夹路径 -i 输入图片源文件夹路径')
             exit()
     if in_path != '' and out_path!='':
         main()
     else:
-        print('缺少重要参数：\n -out 输出路径 -in 输入图片源路径')
+        print('缺少重要参数：\n -o 输出文件夹路径 -i 输入图片源文件夹路径')

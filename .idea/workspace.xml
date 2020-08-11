@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f8b8fb4-847d-496c-8f35-084e069df5bb" name="Default" comment="图片分类支持按照地址分类">
+    <list default="true" id="5f8b8fb4-847d-496c-8f35-084e069df5bb" name="Default" comment="图片分类支持地址">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImgClassify.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgClassify.py" afterDir="false" />
     </list>
@@ -132,7 +132,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ImgClassify.py" />
-      <option name="PARAMETERS" value="-i D:\imagebac -o D:\image" />
+      <option name="PARAMETERS" value="-i D:\fdfs -o D:\imagefdfdf" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -303,7 +303,7 @@
       <option name="presentableId" value="Default" />
       <updated>1505785947014</updated>
       <workItem from="1594976151642" duration="4219000" />
-      <workItem from="1597044957752" duration="14939000" />
+      <workItem from="1597044957752" duration="19179000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1505874870866</created>
@@ -606,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597058505525</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="图片分类支持地址">
+      <created>1597117116070</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1597117116070</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView">
@@ -671,66 +678,67 @@
     <MESSAGE value="企查查爬虫" />
     <MESSAGE value="修改图片分类工具 从命令行调用" />
     <MESSAGE value="图片分类支持按照地址分类" />
-    <option name="LAST_COMMIT_MESSAGE" value="图片分类支持按照地址分类" />
+    <MESSAGE value="图片分类支持地址" />
+    <option name="LAST_COMMIT_MESSAGE" value="图片分类支持地址" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="334" y="389" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597116447859">
+    <state x="334" y="389" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597128837497">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
-    <state x="334" y="389" key="#com.intellij.execution.impl.EditConfigurationsDialog/74.0.1846.1080@74.0.1846.1080" timestamp="1597116447859" />
+    <state x="334" y="389" key="#com.intellij.execution.impl.EditConfigurationsDialog/74.0.1846.1080@74.0.1846.1080" timestamp="1597128837497" />
     <state x="803" y="344" key="#xdebugger.evaluate" timestamp="1597114666444">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
     <state x="803" y="344" key="#xdebugger.evaluate/74.0.1846.1080@74.0.1846.1080" timestamp="1597114666444" />
-    <state x="589" y="106" key="CommitChangelistDialog2" timestamp="1597058502330">
+    <state x="589" y="106" key="CommitChangelistDialog2" timestamp="1597117114964">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
-    <state x="589" y="106" key="CommitChangelistDialog2/74.0.1846.1080@74.0.1846.1080" timestamp="1597058502330" />
+    <state x="589" y="106" key="CommitChangelistDialog2/74.0.1846.1080@74.0.1846.1080" timestamp="1597117114964" />
     <state x="767" y="294" key="FileChooserDialogImpl" timestamp="1594981829817">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="767" y="294" key="FileChooserDialogImpl/1982.146.1304.768/62.0.1858.1080@62.0.1858.1080" timestamp="1594981829817" />
-    <state width="1340" height="265" key="GridCell.Tab.0.bottom" timestamp="1597116450045">
+    <state width="1340" height="340" key="GridCell.Tab.0.bottom" timestamp="1597129058975">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.bottom/74.0.1846.1080@74.0.1846.1080" timestamp="1597116450045" />
-    <state width="1340" height="265" key="GridCell.Tab.0.center" timestamp="1597116450044">
+    <state width="1340" height="340" key="GridCell.Tab.0.bottom/74.0.1846.1080@74.0.1846.1080" timestamp="1597129058975" />
+    <state width="1340" height="340" key="GridCell.Tab.0.center" timestamp="1597129058974">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.center/74.0.1846.1080@74.0.1846.1080" timestamp="1597116450044" />
-    <state width="1340" height="265" key="GridCell.Tab.0.left" timestamp="1597116450044">
+    <state width="1340" height="340" key="GridCell.Tab.0.center/74.0.1846.1080@74.0.1846.1080" timestamp="1597129058974" />
+    <state width="1340" height="340" key="GridCell.Tab.0.left" timestamp="1597129058974">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.left/74.0.1846.1080@74.0.1846.1080" timestamp="1597116450044" />
-    <state width="1340" height="265" key="GridCell.Tab.0.right" timestamp="1597116450045">
+    <state width="1340" height="340" key="GridCell.Tab.0.left/74.0.1846.1080@74.0.1846.1080" timestamp="1597129058974" />
+    <state width="1340" height="340" key="GridCell.Tab.0.right" timestamp="1597129058974">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.right/74.0.1846.1080@74.0.1846.1080" timestamp="1597116450045" />
-    <state width="1340" height="340" key="GridCell.Tab.1.bottom" timestamp="1597115487880">
+    <state width="1340" height="340" key="GridCell.Tab.0.right/74.0.1846.1080@74.0.1846.1080" timestamp="1597129058974" />
+    <state width="1340" height="340" key="GridCell.Tab.1.bottom" timestamp="1597129058975">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
-    <state width="1340" height="340" key="GridCell.Tab.1.bottom/74.0.1846.1080@74.0.1846.1080" timestamp="1597115487880" />
-    <state width="1340" height="340" key="GridCell.Tab.1.center" timestamp="1597115487880">
+    <state width="1340" height="340" key="GridCell.Tab.1.bottom/74.0.1846.1080@74.0.1846.1080" timestamp="1597129058975" />
+    <state width="1340" height="340" key="GridCell.Tab.1.center" timestamp="1597129058975">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
-    <state width="1340" height="340" key="GridCell.Tab.1.center/74.0.1846.1080@74.0.1846.1080" timestamp="1597115487880" />
-    <state width="1340" height="340" key="GridCell.Tab.1.left" timestamp="1597115487880">
+    <state width="1340" height="340" key="GridCell.Tab.1.center/74.0.1846.1080@74.0.1846.1080" timestamp="1597129058975" />
+    <state width="1340" height="340" key="GridCell.Tab.1.left" timestamp="1597129058975">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
-    <state width="1340" height="340" key="GridCell.Tab.1.left/74.0.1846.1080@74.0.1846.1080" timestamp="1597115487880" />
-    <state width="1340" height="340" key="GridCell.Tab.1.right" timestamp="1597115487880">
+    <state width="1340" height="340" key="GridCell.Tab.1.left/74.0.1846.1080@74.0.1846.1080" timestamp="1597129058975" />
+    <state width="1340" height="340" key="GridCell.Tab.1.right" timestamp="1597129058975">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
-    <state width="1340" height="340" key="GridCell.Tab.1.right/74.0.1846.1080@74.0.1846.1080" timestamp="1597115487880" />
+    <state width="1340" height="340" key="GridCell.Tab.1.right/74.0.1846.1080@74.0.1846.1080" timestamp="1597129058975" />
     <state x="497" y="184" key="SettingsEditor" timestamp="1597116901716">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
     <state x="488" y="184" key="SettingsEditor/1982.146.1304.768/62.0.1858.1080@62.0.1858.1080" timestamp="1594981909827" />
     <state x="497" y="184" key="SettingsEditor/74.0.1846.1080@74.0.1846.1080" timestamp="1597116901716" />
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1597058509665">
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1597117118141">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2/74.0.1846.1080@74.0.1846.1080" timestamp="1597058509665" />
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2/74.0.1846.1080@74.0.1846.1080" timestamp="1597117118141" />
     <state width="700" height="500" key="XDebugger.FullValuePopup" timestamp="1597051994555">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
@@ -823,6 +831,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PythonLearn$ImgClassify.coverage" NAME="ImgClassify Coverage Results" MODIFIED="1597116450032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonLearn$ImgClassify.coverage" NAME="ImgClassify Coverage Results" MODIFIED="1597129058953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

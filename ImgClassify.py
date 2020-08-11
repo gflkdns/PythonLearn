@@ -54,15 +54,15 @@ def getTimeAndDesc(filePath):
     tags = exifread.process_file(f)
     GPSLatitude = tags.get('GPS GPSLatitude', '')
     GPSLongitude = tags.get('GPS GPSLongitude', '')
-    make = tags.get('Image Make', '')
-    model = tags.get('Image Model', '')
+    make = tags.get('Image Make', None)
+    model = tags.get('Image Model', None)
     time = os.path.getmtime(filePath)
 
     location = getLocation(GPSLatitude, GPSLongitude)
 
     if location == '':
-        if make != "" and model != "":
-            devName = make + "-" + model
+        if (make is not None) and (model is not None):
+            devName = make.values + "-" + model.values
             return devName, format_time(time)
         else:
             return 'other', format_time(time)

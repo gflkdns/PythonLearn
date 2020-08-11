@@ -20,9 +20,17 @@ def getLocation(GPSLatitude, GPSLongitude):
     # &location=31.225696563611,121.49884033194
     if GPSLongitude == '' or GPSLatitude == '':
         return ''
-    latitude = str(GPSLatitude.values[0].num) + '.' + str(GPSLatitude.values[1].num) + str(GPSLatitude.values[2].num)
-    longitude = str(GPSLongitude.values[0].num) + '.' + str(GPSLongitude.values[1].num) + str(
-        GPSLongitude.values[2].num)
+
+    du = GPSLatitude.values[0].num  # 度
+    fen = GPSLatitude.values[1].num  # 分
+    miao = GPSLatitude.values[2].num / GPSLatitude.values[2].den  # 秒
+    latitude = (miao / 60.0 + fen) / 60.0 + du
+
+    du = GPSLongitude.values[0].num  # 度
+    fen = GPSLongitude.values[1].num  # 分
+    miao = GPSLongitude.values[2].num / GPSLongitude.values[2].den  # 秒
+    longitude = (miao / 60.0 + fen) / 60.0 + du
+
     result = requests.get(url="http://api.map.baidu.com/reverse_geocoding/v3/", params={
         'ak': '6oq2afS16woFO4VHB4xmHXGUvyRFrY9G',
         'output': 'json',
@@ -35,11 +43,10 @@ def getLocation(GPSLatitude, GPSLongitude):
         if statusStr == 0:
             comp = jsonText.get('result', {}).get('addressComponent', {})
             city = comp.get('city')
-            street = comp.get('street')
             district = comp.get('district')
-            return city + "/" + district + "/" + street
+            street = comp.get('street')
+            return city + "/" + district  # + "/" + street
     return ''
-    pass
 
 
 def getTimeAndDesc(filePath):
@@ -88,6 +95,7 @@ def main():
     print("开始移动" + in_path)
     for img, i in zip(fileList, range(len(fileList))):
         tag, time = getTimeAndDesc(img)
+
         if (img.endswith('mp4')):
             tag = '视频'
         timepath = out_path + '/' + tag + "/" + time
@@ -96,8 +104,8 @@ def main():
             os.makedirs(timepath, mode=0o777, exist_ok=True)
 
         # 将这个文件移动到timedir
-        print(i, "/", fileList.__len__())
-        # shutil.move(img, timepath)
+        print(i + 1, "/", fileList.__len__(), tag, time, img)
+        shutil.move(img, timepath)
     print("完成！")
 
 

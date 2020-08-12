@@ -31,6 +31,9 @@ def getLocation(GPSLatitude, GPSLongitude):
     miao = GPSLongitude.values[2].num / GPSLongitude.values[2].den  # 秒
     longitude = (miao / 60.0 + fen) / 60.0 + du
 
+    if longitude == 0 or latitude == 0:
+        return ''
+
     result = requests.get(url="http://api.map.baidu.com/reverse_geocoding/v3/", params={
         'ak': '6oq2afS16woFO4VHB4xmHXGUvyRFrY9G',
         'output': 'json',
@@ -56,18 +59,50 @@ def getTimeAndDesc(filePath):
     GPSLongitude = tags.get('GPS GPSLongitude', '')
     make = tags.get('Image Make', None)
     model = tags.get('Image Model', None)
-    time = os.path.getmtime(filePath)
+
+    try:
+        image_time = getExifTime(tags)
+        if '' != image_time:
+            time = image_time
+        else:
+            time = format_time(os.path.getmtime(filePath))
+    except:
+        time = format_time(os.path.getmtime(filePath))
+        pass
 
     location = getLocation(GPSLatitude, GPSLongitude)
 
     if location == '':
         if (make is not None) and (model is not None):
+            make.values = make.values.strip()
+            model.values = model.values.strip()
+            if make.values == '':
+                return 'other', time
+            if model.values == '':
+                model.values = 'unknow'
             devName = make.values + "-" + model.values
-            return devName, format_time(time)
+            return devName, time
         else:
-            return 'other', format_time(time)
+            return 'other', time
     else:
-        return location, format_time(time)
+        return location, time
+
+
+def getExifTime(tags):
+    time = ''
+    try:
+        time = tags.get('Image DateTime').values.replace(':', '-')[:10]
+    except:
+        try:
+            time = tags.get('EXIF DateTimeOriginal').values.replace(':', '-')[:10]
+        except:
+            try:
+                time = tags.get('EXIF DateTimeDigitized').values.replace(':', '-')[:10]
+            except:
+                pass
+            pass
+        pass
+    return time
 
 
 def format_time(timestamp):
@@ -90,26 +125,47 @@ def main():
     fileList = []
 
     find_all_file(fileList, in_path)
-    print(fileList)
 
-    print("开始移动" + in_path)
+    print("开始移动到 -->", in_path)
     for img, i in zip(fileList, range(len(fileList))):
         tag, time = getTimeAndDesc(img)
-
+        if tag == '':
+            tag = 'other'
+        if time == '':
+            time = "notime"
         if (img.endswith('mp4')):
             tag = '视频'
+        if (img.endswith('zip')):
+            tag = 'zip'
+        tag = tag.strip()
+        time = time.strip()
         timepath = out_path + '/' + tag + "/" + time
-        if not os.path.exists(timepath) or not os.path.isdir(timepath):
-            # 新建文件夹
-            os.makedirs(timepath, mode=0o777, exist_ok=True)
+        mkdir(timepath)
 
         # 将这个文件移动到timedir
-        print(i + 1, "/", fileList.__len__(), tag, time, img)
-        shutil.move(img, timepath)
+        try:
+            shutil.move(img, timepath)
+            print('[成功]', i + 1, "/", fileList.__len__(), tag, time, img)
+        except:
+            try:
+                mkdir(out_path + '/重复文件/' + tag + "/" + time)
+                shutil.move(img, out_path + '/重复文件/' + tag + "/" + time)
+                print('[重复]', i + 1, "/", fileList.__len__(), tag, time, img)
+            except:
+                print('[错误]', i + 1, "/", fileList.__len__(), tag, time, img)
+                pass
+            pass
     print("完成！")
 
 
+def mkdir(timepath):
+    if not os.path.exists(timepath) or not os.path.isdir(timepath):
+        # 新建文件夹
+        os.makedirs(timepath, mode=0o777, exist_ok=True)
+
+
 if __name__ == '__main__':
+    in_path = out_path = ''
     opts, args = getopt.getopt(sys.argv[1:], 'o:i:', ["help"])
     for opt, arg in opts:
         if opt == '-i':

@@ -173,7 +173,7 @@ ui: MainWindow = None
 def ui():
     global ui
     app = wx.App(False)  # 创建1个APP，禁用stdout/stderr重定向
-    ui = MainWindow(None, "化身摇头怪!")  # 这是一个顶层的window
+    ui = MainWindow(None, "摇头怪!")  # 这是一个顶层的window
     app.MainLoop()
 
 

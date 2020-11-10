@@ -330,7 +330,7 @@
       <workItem from="1602733371103" duration="232000" />
       <workItem from="1604919319330" duration="889000" />
       <workItem from="1604974588002" duration="615000" />
-      <workItem from="1604975213378" duration="23944000" />
+      <workItem from="1604975213378" duration="25122000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1505874870866</created>
@@ -654,7 +654,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605001454424</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="自动走a">
+      <created>1605001822338</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1605001822339</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TodoView">
@@ -740,25 +747,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="660" y="419" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604975286556" />
-    <state width="1340" height="222" key="GridCell.Tab.0.bottom" timestamp="1605001792636">
+    <state width="1340" height="222" key="GridCell.Tab.0.bottom" timestamp="1605002811539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605001792636" />
+    <state width="1340" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605002811539" />
     <state width="1340" height="265" key="GridCell.Tab.0.bottom/74.0.1846.1080@74.0.1846.1080" timestamp="1597214720145" />
-    <state width="1340" height="222" key="GridCell.Tab.0.center" timestamp="1605001792636">
+    <state width="1340" height="222" key="GridCell.Tab.0.center" timestamp="1605002811539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="222" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605001792636" />
+    <state width="1340" height="222" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605002811539" />
     <state width="1340" height="265" key="GridCell.Tab.0.center/74.0.1846.1080@74.0.1846.1080" timestamp="1597214720145" />
-    <state width="1340" height="222" key="GridCell.Tab.0.left" timestamp="1605001792636">
+    <state width="1340" height="222" key="GridCell.Tab.0.left" timestamp="1605002811539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="222" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605001792636" />
+    <state width="1340" height="222" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605002811539" />
     <state width="1340" height="265" key="GridCell.Tab.0.left/74.0.1846.1080@74.0.1846.1080" timestamp="1597214720143" />
-    <state width="1340" height="222" key="GridCell.Tab.0.right" timestamp="1605001792636">
+    <state width="1340" height="222" key="GridCell.Tab.0.right" timestamp="1605002811539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="222" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605001792636" />
+    <state width="1340" height="222" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605002811539" />
     <state width="1340" height="265" key="GridCell.Tab.0.right/74.0.1846.1080@74.0.1846.1080" timestamp="1597214720145" />
     <state width="1340" height="319" key="GridCell.Tab.1.bottom" timestamp="1604985467520">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -780,14 +787,15 @@
     </state>
     <state width="1340" height="319" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604985467520" />
     <state width="1340" height="340" key="GridCell.Tab.1.right/74.0.1846.1080@74.0.1846.1080" timestamp="1597213717235" />
-    <state x="440" y="177" key="SettingsEditor" timestamp="1604991786649">
+    <state x="440" y="177" key="SettingsEditor" timestamp="1605002983673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="177" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604991786649" />
+    <state x="440" y="177" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605002983673" />
     <state x="497" y="184" key="SettingsEditor/74.0.1846.1080@74.0.1846.1080" timestamp="1597116901716" />
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1597129839498">
-      <screen x="74" y="0" width="1846" height="1080" />
+    <state x="529" y="262" key="Vcs.Push.Dialog.v2" timestamp="1605001825902">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="529" y="262" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605001825902" />
     <state x="583" y="272" key="Vcs.Push.Dialog.v2/74.0.1846.1080@74.0.1846.1080" timestamp="1597129839498" />
     <state width="700" height="500" key="XDebugger.FullValuePopup" timestamp="1597051994555">
       <screen x="74" y="0" width="1846" height="1080" />
@@ -884,7 +892,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PythonLearn$ZiDongZouA.coverage" NAME="ZiDongZouA Coverage Results" MODIFIED="1605001792630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonLearn$ZiDongZouA.coverage" NAME="ZiDongZouA Coverage Results" MODIFIED="1605002811534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$ImgClassify.coverage" NAME="ImgClassify Coverage Results" MODIFIED="1597214827272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

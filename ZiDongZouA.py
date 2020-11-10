@@ -66,6 +66,13 @@ class MainWindow(wx.Frame):
 
         self.SetSizer(self.sizer)
         self.Show(True)
+        self.setMessage("-----------------\n"
+                        "开启后鼠标左键就会开启自动走A\n\n"
+                        "首次使用需要改键:\n"
+                        "快捷移动攻击:z\n"
+                        "移动:x\n"
+                        "只以英雄为目标:c\n"
+                        "-----------------\n\n")
 
     def OnClose(self, event):
         print("exit")

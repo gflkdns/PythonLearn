@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f8b8fb4-847d-496c-8f35-084e069df5bb" name="Default" comment="自动走a">
+      <change afterPath="$PROJECT_DIR$/lol/mouse_move.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZiDongZouA.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZiDongZouA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZiDongZouA.py" beforeDir="false" afterPath="$PROJECT_DIR$/lol/ZiDongZouA.py" afterDir="false" />
     </list>
     <list id="3ee67a41-363b-478b-aafd-8a05ee9996b7" name="发邮件" comment="发邮件" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +112,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lol" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -123,22 +124,22 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\PythonLearn" />
-      <recent name="F:\PythonLearn\ftp" />
-      <recent name="F:\PythonLearn\csdn" />
-      <recent name="F:\PythonPoj\PythonLearn" />
-      <recent name="F:\PythonPoj\PythonLearn\line" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\miqt\PycharmProjects\PythonLearn\lol" />
       <recent name="F:\PythonLearn" />
       <recent name="F:\PythonPoj\PythonLearn\img" />
       <recent name="F:\PythonPoj\PythonLearn\findMM" />
       <recent name="F:\PythonPoj\PythonLearn\line\Samples" />
-      <recent name="F:\PythonPoj\PythonLearn\line" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\miqt\PycharmProjects\PythonLearn\lol" />
+      <recent name="F:\PythonLearn" />
+      <recent name="F:\PythonLearn\ftp" />
+      <recent name="F:\PythonLearn\csdn" />
+      <recent name="F:\PythonPoj\PythonLearn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ZiDongZouA">
+  <component name="RunManager" selected="Python.ZiDongZouA (1)">
     <configuration name="ImgClassify" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -205,6 +206,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ZiDongZouA (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lol" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lol/ZiDongZouA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ZiDongZouA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,7 +241,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ZiDongZouA.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\miqt\PycharmProjects\PythonLearn\lol\ZiDongZouA.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -241,28 +264,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file_io.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="qccfb" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonLearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qichacha" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qichacha/qccfb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -296,19 +297,19 @@
     <list>
       <item itemvalue="Python.Math" />
       <item itemvalue="Python.file_io" />
-      <item itemvalue="Python.qccfb" />
       <item itemvalue="Python.qi_CC" />
       <item itemvalue="Python.ZhiLian" />
       <item itemvalue="Python.ImgClassify" />
       <item itemvalue="Python.ZiDongZouA" />
+      <item itemvalue="Python.ZiDongZouA (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ZiDongZouA (1)" />
         <item itemvalue="Python.ZiDongZouA" />
         <item itemvalue="Python.ImgClassify" />
         <item itemvalue="Python.ZhiLian" />
         <item itemvalue="Python.qi_CC" />
-        <item itemvalue="Python.qccfb" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +331,9 @@
       <workItem from="1602733371103" duration="232000" />
       <workItem from="1604919319330" duration="889000" />
       <workItem from="1604974588002" duration="615000" />
-      <workItem from="1604975213378" duration="25122000" />
+      <workItem from="1604975213378" duration="27459000" />
+      <workItem from="1605060336171" duration="248000" />
+      <workItem from="1605086060407" duration="1033000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1505874870866</created>
@@ -661,7 +664,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605001822339</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="自动走a">
+      <created>1605003203584</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1605003203584</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TodoView">
@@ -743,50 +753,54 @@
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
     <state x="589" y="106" key="CommitChangelistDialog2/74.0.1846.1080@74.0.1846.1080" timestamp="1597129832364" />
-    <state x="660" y="419" key="FileChooserDialogImpl" timestamp="1604975286556">
+    <state x="660" y="419" key="FileChooserDialogImpl" timestamp="1605060583172">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="660" y="419" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604975286556" />
-    <state width="1340" height="222" key="GridCell.Tab.0.bottom" timestamp="1605002811539">
+    <state x="660" y="419" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605060583172" />
+    <state width="1340" height="222" key="GridCell.Tab.0.bottom" timestamp="1605087076048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605002811539" />
+    <state width="1340" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605087076048" />
     <state width="1340" height="265" key="GridCell.Tab.0.bottom/74.0.1846.1080@74.0.1846.1080" timestamp="1597214720145" />
-    <state width="1340" height="222" key="GridCell.Tab.0.center" timestamp="1605002811539">
+    <state width="1340" height="222" key="GridCell.Tab.0.center" timestamp="1605087076048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="222" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605002811539" />
+    <state width="1340" height="222" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605087076048" />
     <state width="1340" height="265" key="GridCell.Tab.0.center/74.0.1846.1080@74.0.1846.1080" timestamp="1597214720145" />
-    <state width="1340" height="222" key="GridCell.Tab.0.left" timestamp="1605002811539">
+    <state width="1340" height="222" key="GridCell.Tab.0.left" timestamp="1605087076048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="222" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605002811539" />
+    <state width="1340" height="222" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605087076048" />
     <state width="1340" height="265" key="GridCell.Tab.0.left/74.0.1846.1080@74.0.1846.1080" timestamp="1597214720143" />
-    <state width="1340" height="222" key="GridCell.Tab.0.right" timestamp="1605002811539">
+    <state width="1340" height="222" key="GridCell.Tab.0.right" timestamp="1605087076048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="222" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605002811539" />
+    <state width="1340" height="222" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605087076048" />
     <state width="1340" height="265" key="GridCell.Tab.0.right/74.0.1846.1080@74.0.1846.1080" timestamp="1597214720145" />
-    <state width="1340" height="319" key="GridCell.Tab.1.bottom" timestamp="1604985467520">
+    <state width="1340" height="319" key="GridCell.Tab.1.bottom" timestamp="1605005322028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="319" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604985467520" />
+    <state width="1340" height="319" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605005322028" />
     <state width="1340" height="340" key="GridCell.Tab.1.bottom/74.0.1846.1080@74.0.1846.1080" timestamp="1597213717235" />
-    <state width="1340" height="319" key="GridCell.Tab.1.center" timestamp="1604985467520">
+    <state width="1340" height="319" key="GridCell.Tab.1.center" timestamp="1605005322027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="319" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604985467520" />
+    <state width="1340" height="319" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605005322027" />
     <state width="1340" height="340" key="GridCell.Tab.1.center/74.0.1846.1080@74.0.1846.1080" timestamp="1597213717235" />
-    <state width="1340" height="319" key="GridCell.Tab.1.left" timestamp="1604985467520">
+    <state width="1340" height="319" key="GridCell.Tab.1.left" timestamp="1605005322027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="319" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604985467520" />
+    <state width="1340" height="319" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605005322027" />
     <state width="1340" height="340" key="GridCell.Tab.1.left/74.0.1846.1080@74.0.1846.1080" timestamp="1597213717235" />
-    <state width="1340" height="319" key="GridCell.Tab.1.right" timestamp="1604985467520">
+    <state width="1340" height="319" key="GridCell.Tab.1.right" timestamp="1605005322027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="319" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604985467520" />
+    <state width="1340" height="319" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605005322027" />
     <state width="1340" height="340" key="GridCell.Tab.1.right/74.0.1846.1080@74.0.1846.1080" timestamp="1597213717235" />
+    <state x="962" y="235" key="RollbackChangesDialog" timestamp="1605005318916">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="962" y="235" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605005318916" />
     <state x="440" y="177" key="SettingsEditor" timestamp="1605002983673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -801,22 +815,47 @@
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
     <state width="700" height="500" key="XDebugger.FullValuePopup/74.0.1846.1080@74.0.1846.1080" timestamp="1597051994555" />
-    <state x="416" y="138" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1597213536498">
-      <screen x="74" y="0" width="1846" height="1080" />
+    <state x="356" y="133" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605004466862">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="356" y="133" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605004466862" />
     <state x="416" y="138" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/74.0.1846.1080@74.0.1846.1080" timestamp="1597213536498" />
     <state x="535" y="268" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1597057193918">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
     <state x="535" y="268" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/74.0.1846.1080@74.0.1846.1080" timestamp="1597057193918" />
+    <state x="577" y="134" width="1200" height="800" key="dock-window-1" timestamp="1605004401945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="577" y="134" width="1200" height="800" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1605004401945" />
+    <state x="577" y="134" width="1200" height="800" key="dock-window-2" timestamp="1605004401945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="577" y="134" width="1200" height="800" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1605004401945" />
+    <state x="577" y="134" width="1200" height="800" key="dock-window-3" timestamp="1605004401945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="577" y="134" width="1200" height="800" key="dock-window-3/0.0.1920.1040@0.0.1920.1040" timestamp="1605004401945" />
+    <state x="577" y="134" width="1200" height="800" key="dock-window-4" timestamp="1605004401945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="577" y="134" width="1200" height="800" key="dock-window-4/0.0.1920.1040@0.0.1920.1040" timestamp="1605004401945" />
+    <state x="577" y="134" width="1200" height="800" key="dock-window-5" timestamp="1605004401945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="577" y="134" width="1200" height="800" key="dock-window-5/0.0.1920.1040@0.0.1920.1040" timestamp="1605004401945" />
+    <state x="577" y="134" width="1200" height="800" key="dock-window-6" timestamp="1605004401945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="577" y="134" width="1200" height="800" key="dock-window-6/0.0.1920.1040@0.0.1920.1040" timestamp="1605004401945" />
     <state x="692" y="138" width="598" height="804" key="find.popup" timestamp="1597213760441">
       <screen x="74" y="0" width="1846" height="1080" />
     </state>
     <state x="692" y="138" width="598" height="804" key="find.popup/74.0.1846.1080@74.0.1846.1080" timestamp="1597213760441" />
-    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1604983949632">
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1605004622161">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604983949632" />
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605004622161" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -892,7 +931,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PythonLearn$ZiDongZouA.coverage" NAME="ZiDongZouA Coverage Results" MODIFIED="1605002811534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonLearn$ZiDongZouA.coverage" NAME="ZiDongZouA Coverage Results" MODIFIED="1605005186537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$ImgClassify.coverage" NAME="ImgClassify Coverage Results" MODIFIED="1597214827272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonLearn$ZiDongZouA__1_.coverage" NAME="ZiDongZouA (1) Coverage Results" MODIFIED="1605087076043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lol" />
   </component>
 </project>

@@ -1,9 +1,110 @@
-import pythoncom
-import PyHook3
+import getopt
+import sys
 import threading
 import time
-from lol import mouse_move
-import sys, getopt
+from ctypes import POINTER, c_ulong, Structure, c_ushort, c_short, c_long, byref, windll, pointer, sizeof, Union
+
+import PyHook3
+import pythoncom
+
+# ---------------------------------------------
+
+PUL = POINTER(c_ulong)
+
+
+class KeyBdInput(Structure):
+    _fields_ = [("wVk", c_ushort),
+                ("wScan", c_ushort),
+                ("dwFlags", c_ulong),
+                ("time", c_ulong),
+                ("dwExtraInfo", PUL)]
+
+
+class HardwareInput(Structure):
+    _fields_ = [("uMsg", c_ulong),
+                ("wParamL", c_short),
+                ("wParamH", c_ushort)]
+
+
+class MouseInput(Structure):
+    _fields_ = [("dx", c_long),
+                ("dy", c_long),
+                ("mouseData", c_ulong),
+                ("dwFlags", c_ulong),
+                ("time", c_ulong),
+                ("dwExtraInfo", PUL)]
+
+
+class Input_I(Union):
+    _fields_ = [("ki", KeyBdInput),
+                ("mi", MouseInput),
+                ("hi", HardwareInput)]
+
+
+class Input(Structure):
+    _fields_ = [("type", c_ulong),
+                ("ii", Input_I)]
+
+
+class POINT(Structure):
+    _fields_ = [("x", c_ulong),
+                ("y", c_ulong)]
+
+
+# <Get Pos>
+def get_mpos():
+    orig = POINT()
+    windll.user32.GetCursorPos(byref(orig))
+    return int(orig.x), int(orig.y)
+
+
+# </Get Pos>
+
+# <Set Pos>
+def set_mpos(pos):
+    x, y = pos
+    windll.user32.SetCursorPos(x, y)
+
+
+# </Set Pos>
+
+# <move and click>
+def move_click(pos, move_back=False):
+    origx, origy = get_mpos()
+    set_mpos(pos)
+    FInputs = Input * 2
+    extra = c_ulong(0)
+    ii_ = Input_I()
+    ii_.mi = MouseInput(0, 0, 0, 2, 0, pointer(extra))
+    ii2_ = Input_I()
+    ii2_.mi = MouseInput(0, 0, 0, 4, 0, pointer(extra))
+    x = FInputs((0, ii_), (0, ii2_))
+    windll.user32.SendInput(2, pointer(x), sizeof(x[0]))
+    if move_back:
+        set_mpos((origx, origy))
+        return origx, origy
+    # </move and click>
+
+
+def sendkey(scancode, pressed):
+    FInputs = Input * 1
+    extra = c_ulong(0)
+    ii_ = Input_I()
+    flag = 0x8  # KEY_SCANCODE
+    ii_.ki = KeyBdInput(0, 0, flag, 0, pointer(extra))
+    InputBox = FInputs((1, ii_))
+    if scancode is None:
+        return
+    InputBox[0].ii.ki.wScan = scancode
+    InputBox[0].ii.ki.dwFlags = 0x8
+    # KEY_SCANCODE
+    if not (pressed):
+        InputBox[0].ii.ki.dwFlags |= 0x2
+        # released
+    windll.user32.SendInput(1, pointer(InputBox), sizeof(InputBox[0]))
+
+
+# ---------------------------------------------
 
 # 每秒攻击次数
 英雄攻速 = 1.5
@@ -11,6 +112,8 @@ import sys, getopt
 前摇比例 = 0.3
 # 攻击后多移动一段时间
 移动补偿 = 0
+# 点击间隔
+minTime = 0.1
 
 leftPass = False
 # 是否只以英雄为目标 c
@@ -18,16 +121,18 @@ onlyLoL = True
 
 
 def parseArg():
-    print("使用说明：xxx.exe -g 英雄攻速 -q 前摇比例 -b 移动补偿")
-    global 英雄攻速, 前摇比例, 移动补偿
-    opts, args = getopt.getopt(sys.argv[1:], 'n:v:r:', [])
+    print("使用说明：xxx.exe -g 英雄攻速 -q 前摇比例 -b 移动补偿 -d 点击间隔")
+    global 英雄攻速, 前摇比例, 移动补偿, minTime
+    opts, args = getopt.getopt(sys.argv[1:], 'g:q:b:d:', [])
     for opt, arg in opts:
         if opt == '-g':
-            英雄攻速 = arg
+            英雄攻速 = float(arg)
         elif opt == '-q':
-            前摇比例 = arg
+            前摇比例 = float(arg)
         elif opt == '-b':
-            移动补偿 = arg
+            移动补偿 = float(arg)
+        elif opt == '-d':
+            minTime = float(arg)
 
     print('英雄攻速：', 英雄攻速)
     print('攻击前摇：', 前摇比例)
@@ -47,14 +152,14 @@ def onMouseLeftUp(event):
 
 
 def onKeyDown(event):
-    if (event.Key == "Lshift"):
+    if (event.Key == "T"):
         global leftPass
         leftPass = True
     return True
 
 
 def onKeyUp(event):
-    if (event.Key == "Lshift"):
+    if (event.Key == "T"):
         global leftPass
         leftPass = False
     return True
@@ -65,23 +170,33 @@ def action():
         global leftPass
         if leftPass:
             if onlyLoL:
-                mouse_move.sendkey(0x2e, 1)
+                sendkey(0x2e, 1)
             qianyao = (1.0 / 英雄攻速) * (前摇比例)
             houyao = (1.0 / 英雄攻速) * (1 - 前摇比例) + 移动补偿
-            message("开始平A【z】")
-            mouse_move.sendkey(0x2c, 1)
-            mouse_move.sendkey(0x2c, 0)
-            message("等待前摇结束【{攻击前摇}】".format(攻击前摇=qianyao))
-            time.sleep(qianyao)
-            message("移动人物,取消后摇【X】")
-            mouse_move.sendkey(0x2d, 1)
-            mouse_move.sendkey(0x2d, 0)
-            message("等待下一次攻击【{攻击间隔}】".format(攻击间隔=houyao))
-            time.sleep(houyao)
+            message("开始平A[z]")
+            message("等待前摇结束[{攻击前摇}]".format(攻击前摇=qianyao))
+            click(0x2c, qianyao)
+            message("移动人物,取消后摇[X]")
+            message("等待下一次攻击[{攻击间隔}]\n".format(攻击间隔=houyao))
+            click(0x2d, houyao)
             if onlyLoL:
-                mouse_move.sendkey(0x2e, 0)
+                sendkey(0x2e, 0)
         else:
             time.sleep(0.05)
+
+
+# 把时间切分开，快速点击
+def click(key, clicktime):
+    freeTime = clicktime
+    # 0.25 - 0.1 - 0.1 - 0.05
+    while freeTime > minTime:
+        sendkey(key, 1)
+        sendkey(key, 0)
+        time.sleep(minTime)
+        freeTime = freeTime - minTime
+    sendkey(key, 1)
+    sendkey(key, 0)
+    time.sleep(minTime)
 
 
 def keyLinster():

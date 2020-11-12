@@ -116,16 +116,28 @@ class MainWindow(wx.Frame):
     onlyLoL = True
 
     def onKeyDown(self, event):
-        if (event.Key == "Lshift"):
+        # print(event.Key, 'down')
+        if (event.Key == "Lshift" or event.Key == "T"):
             self.leftPass = True
+        elif (event.Key == "Up"):
+            self.updateNum(self.text_num1, True, 0.1, 3.0, 0.1)
+        elif (event.Key == "Down"):
+            self.updateNum(self.text_num1, False, 0.1, 3.0, 0.1)
+        elif (event.Key == "Right"):
+            self.updateNum(self.text_num2, True, 0.1, 0.9, 0.05)
+        elif (event.Key == "Left"):
+            self.updateNum(self.text_num2, False, 0.1, 0.9, 0.05)
         return True
 
     def onKeyUp(self, event):
-        if (event.Key == "Lshift"):
+        # print(event.Key, 'up')
+        if (event.Key == "Lshift" or event.Key == "T"):
             self.leftPass = False
+
         return True
 
     def action(self):
+        i = 0
         while True:
             if self.leftPass and not self.isPause:
                 # 每秒攻击次数
@@ -135,19 +147,28 @@ class MainWindow(wx.Frame):
                 # 攻击后多移动一段时间
                 移动补偿 = float(self.text_num3.Label)
 
+                # print("英雄攻速[{c}] ： 前摇比例[{a}] ： 移动补偿[{b}]".format(c=(英雄攻速), a=前摇比例, b=移动补偿))
+
+                processTime = time.time()
                 if self.onlyLoL:
                     sendkey(0x2e, 1)
                 qianyao = (1.0 / 英雄攻速) * (前摇比例)
-                houyao = (1.0 / 英雄攻速) * (1 - 前摇比例) + 移动补偿
                 # 开始攻击，并等待前摇结束
-                print("开始攻击，并等待前摇结束[{攻击前摇}]".format(攻击前摇=qianyao))
                 self.click(0x2c, qianyao)
                 # 移动人物,取消后摇，并走动攻击间隔的时间
-                print("等待下一次攻击[{攻击间隔}]\n".format(攻击间隔=houyao))
+                processTime = time.time() - processTime  # 前摇实际用时
+                houyao = (1.0 / 英雄攻速) - processTime + 移动补偿
                 self.click(0x2d, houyao)
+                i = i + 1
+                print("攻击周期[{c}] = 前摇[{a}] | 实际前摇[{d}] + 后摇[{b}]"
+                      .format(c=(1.0 / 英雄攻速), a=qianyao, b=houyao, d=processTime))
+                self.message("攻击 [{i}] {c} / {d} / {b}"
+                             .format(i=i, c=round((1.0 / 英雄攻速), 2), a=round(qianyao, 2), b=round(houyao, 2),
+                                     d=round(processTime, 2)))
                 if self.onlyLoL:
                     sendkey(0x2e, 0)
             else:
+                i = i - i
                 time.sleep(0.05)
 
     # 把时间切分开，快速点击
@@ -162,7 +183,7 @@ class MainWindow(wx.Frame):
             freeTime = freeTime - self.minTime
         sendkey(key, 1)
         sendkey(key, 0)
-        time.sleep(self.minTime)
+        time.sleep(freeTime)
 
     def keyLinster(self, ):
         # 创建一个“钩子”管理对象
@@ -176,12 +197,11 @@ class MainWindow(wx.Frame):
         pythoncom.PumpMessages()
 
     def message(self, text):
-        self.message_text.Label = self.message_text.Label[0:10]
-        self.message_text.Label = text + self.message_text.Label
+        self.message_text.Label = text
 
     def __init__(self, parent, title):
         wx.Frame.__init__(self, parent, title=title, style=wx.DEFAULT_FRAME_STYLE ^ (
-                wx.MAXIMIZE_BOX | wx.RESIZE_BORDER | wx.SYSTEM_MENU) | wx.STAY_ON_TOP,
+                wx.MAXIMIZE_BOX | wx.RESIZE_BORDER | wx.SYSTEM_MENU) | wx.STAY_ON_TOP | wx.FRAME_TOOL_WINDOW,
                           size=(170, 180))
         self.SetTransparent(180)  # 设置透明
 
@@ -194,10 +214,12 @@ class MainWindow(wx.Frame):
         self.sizer4 = wx.BoxSizer(wx.HORIZONTAL)
         self.sizer5 = wx.BoxSizer(wx.HORIZONTAL)
 
-        self.text1 = wx.StaticText(self, name="aa", label="英雄攻速", size=(60, -1), style=wx.ALIGN_CENTER)
+        self.text1 = wx.StaticText(self, name="aa", label="英雄攻速", size=(70, -1), style=wx.ALIGN_CENTER)
         self.text_num1 = wx.StaticText(self, name="aa", label="0.7", size=(30, -1), style=wx.ALIGN_CENTER)
-        self.text1.SetForegroundColour('blue')
-        self.text_num1.SetForegroundColour('red')
+        self.text1.SetFont(wx.Font(12, wx.SWISS, wx.NORMAL, wx.NORMAL))
+        self.text_num1.SetFont(wx.Font(12, wx.SWISS, wx.NORMAL, wx.FONTWEIGHT_BOLD))
+        self.text1.SetForegroundColour('yellow')
+        self.text_num1.SetForegroundColour('yellow')
         self.button_up1 = wx.Button(self, name="up1", label="+", size=(30, 30))
         self.button_down1 = wx.Button(self, name="down1", label="-", size=(30, 30))
         self.Bind(wx.EVT_BUTTON, self.onClick, self.button_up1)
@@ -207,10 +229,12 @@ class MainWindow(wx.Frame):
         self.sizer1.Add(self.button_up1, flag=wx.ALIGN_CENTER)
         self.sizer1.Add(self.button_down1, flag=wx.ALIGN_CENTER)
 
-        self.text2 = wx.StaticText(self, name="aa", label="前摇间隔", size=(60, -1), style=wx.ALIGN_CENTER)
+        self.text2 = wx.StaticText(self, name="aa", label="前摇间隔", size=(70, -1), style=wx.ALIGN_CENTER)
         self.text_num2 = wx.StaticText(self, name="aa", label="0.3", size=(30, -1), style=wx.ALIGN_CENTER)
-        self.text2.SetForegroundColour('blue')
-        self.text_num2.SetForegroundColour('red')
+        self.text2.SetFont(wx.Font(12, wx.SWISS, wx.NORMAL, wx.NORMAL))
+        self.text_num2.SetFont(wx.Font(12, wx.SWISS, wx.NORMAL, wx.FONTWEIGHT_BOLD))
+        self.text2.SetForegroundColour('yellow')
+        self.text_num2.SetForegroundColour('yellow')
         self.button_up2 = wx.Button(self, name="up2", label="+", size=(30, 30))
         self.button_down2 = wx.Button(self, name="down2", label="-", size=(30, 30))
         self.Bind(wx.EVT_BUTTON, self.onClick, self.button_up2)
@@ -220,10 +244,12 @@ class MainWindow(wx.Frame):
         self.sizer2.Add(self.button_up2, flag=wx.ALIGN_CENTER)
         self.sizer2.Add(self.button_down2, flag=wx.ALIGN_CENTER)
 
-        self.text3 = wx.StaticText(self, name="aa", label="移动补偿", size=(60, -1), style=wx.ALIGN_CENTER)
+        self.text3 = wx.StaticText(self, name="aa", label="移动补偿", size=(70, -1), style=wx.ALIGN_CENTER)
         self.text_num3 = wx.StaticText(self, name="aa", label="0.0", size=(30, -1), style=wx.ALIGN_CENTER)
-        self.text3.SetForegroundColour('blue')
-        self.text_num3.SetForegroundColour('red')
+        self.text3.SetFont(wx.Font(12, wx.SWISS, wx.NORMAL, wx.NORMAL))
+        self.text_num3.SetFont(wx.Font(12, wx.SWISS, wx.NORMAL, wx.FONTWEIGHT_BOLD))
+        self.text3.SetForegroundColour('yellow')
+        self.text_num3.SetForegroundColour('yellow')
         self.button_up3 = wx.Button(self, name="up3", label="+", size=(30, 30))
         self.button_down3 = wx.Button(self, name="down3", label="-", size=(30, 30))
         self.Bind(wx.EVT_BUTTON, self.onClick, self.button_up3)
@@ -233,15 +259,15 @@ class MainWindow(wx.Frame):
         self.sizer3.Add(self.button_up3, flag=wx.ALIGN_CENTER)
         self.sizer3.Add(self.button_down3, flag=wx.ALIGN_CENTER)
 
-        self.button_start = wx.Button(self, name="start", label="启动", size=(150 / 2, 30))
-        self.button_stop = wx.Button(self, name="stop", label="关闭", size=(150 / 2, 30))
+        self.button_start = wx.Button(self, name="start", label="启动", size=(80, 30))
+        self.button_stop = wx.Button(self, name="stop", label="关闭", size=(80, 30))
         self.Bind(wx.EVT_BUTTON, self.onClick, self.button_start)
         self.Bind(wx.EVT_BUTTON, self.onClick, self.button_stop)
         self.sizer4.Add(self.button_start, flag=wx.ALIGN_CENTER)
         self.sizer4.Add(self.button_stop, flag=wx.ALIGN_CENTER)
 
         self.message_text = wx.StaticText(self, name="aa", label="作者:github.com/miqt")
-        self.message_text.SetForegroundColour('red')
+        self.message_text.SetForegroundColour('yellow')
         self.sizer5.Add(self.message_text)
 
         self.sizer.Add(self.sizer1)
@@ -275,11 +301,12 @@ class MainWindow(wx.Frame):
         elif name == "down3":
             self.updateNum(self.text_num3, False, 0.0, 3.0, 0.1)
         elif name == "start":
-            self.message_text.Label = "已启动,按住Shift或T走A"
             self.isPause = False
+            self.message_text.Label = "已启动,按住Shift或T走A"
             pass
         elif name == "stop":
             self.isPause = True
+            self.message_text.Label = "已关闭,按住Shift或T走A"
             pass
 
     def updateNum(self, who, isUp, min, max, min_diff):

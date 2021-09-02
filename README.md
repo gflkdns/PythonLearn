@@ -66,3 +66,7 @@ ftp上传下载工具
 ### FileEnc.py
 
 将任意一个文件加密变成一张笑脸图片，但可以解密回原文件
+### apk_dump.py
+
+APK DUMP 工具，直接将当前手机显示页面所在APK 导出到手机
+[编译好的exe下载](./apkdump/dist/apk_dump.exe)

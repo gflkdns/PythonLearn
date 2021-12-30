@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f8b8fb4-847d-496c-8f35-084e069df5bb" name="Default" comment="APK DUMP 工具">
-      <change afterPath="$PROJECT_DIR$/apkdump/apk_dump.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apkdump/icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apkdump/make.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImgClassify.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImgClassify.py" afterDir="false" />
     </list>
     <list id="3ee67a41-363b-478b-aafd-8a05ee9996b7" name="发邮件" comment="发邮件" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,8 +139,8 @@
       <recent name="F:\PythonLearn\csdn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.apk_dump">
-    <configuration name="ImgClassify" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.ImgClassify">
+    <configuration name="ImgClassify" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,7 +154,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ImgClassify.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="-o E:\img\o -i E:\img" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -209,28 +206,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ZiDongZouA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonLearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\miqt\PycharmProjects\PythonLearn\lol\ZiDongZouA.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="ZouAUI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -245,6 +220,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lol/ZouAUI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="apk_dump (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apkdump" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apkdump/apk_dump.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -300,19 +297,19 @@
     <list>
       <item itemvalue="Python.Math" />
       <item itemvalue="Python.file_io" />
-      <item itemvalue="Python.ImgClassify" />
-      <item itemvalue="Python.ZiDongZouA" />
       <item itemvalue="Python.ZiDongZouA (1)" />
       <item itemvalue="Python.ZouAUI" />
       <item itemvalue="Python.apk_dump" />
+      <item itemvalue="Python.apk_dump (1)" />
+      <item itemvalue="Python.ImgClassify" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ImgClassify" />
+        <item itemvalue="Python.apk_dump (1)" />
         <item itemvalue="Python.apk_dump" />
         <item itemvalue="Python.ZouAUI" />
         <item itemvalue="Python.ZiDongZouA (1)" />
-        <item itemvalue="Python.ZiDongZouA" />
-        <item itemvalue="Python.ImgClassify" />
       </list>
     </recent_temporary>
   </component>
@@ -339,13 +336,8 @@
       <workItem from="1605086060407" duration="5394000" />
       <workItem from="1605147334781" duration="7593000" />
       <workItem from="1605157314317" duration="17370000" />
-    </task>
-    <task id="LOCAL-00003" summary="init">
-      <created>1505878652919</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1505878652919</updated>
+      <workItem from="1634612040364" duration="419000" />
+      <workItem from="1635496185385" duration="3103000" />
     </task>
     <task id="LOCAL-00004" summary="save">
       <created>1505904354025</created>
@@ -683,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605167327095</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="APK DUMP 工具">
+      <created>1630554729028</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1630554729029</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView">
@@ -702,12 +701,12 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
   </component>
   <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
+    <option name="COLUMN_ID_ORDER">
       <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
       </list>
     </option>
   </component>
@@ -724,7 +723,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="统计智联各个城市的职位数" />
     <MESSAGE value="python模仿作画" />
     <MESSAGE value="python do_follow csdn" />
     <MESSAGE value="python unfollow" />
@@ -749,7 +747,8 @@
     <MESSAGE value="使用 ctypes 方式触发点击，防止点击无效" />
     <MESSAGE value="控制点击频率" />
     <MESSAGE value="UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI" />
+    <MESSAGE value="APK DUMP 工具" />
+    <option name="LAST_COMMIT_MESSAGE" value="APK DUMP 工具" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -805,14 +804,24 @@
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ImgClassify.py</url>
-          <line>51</line>
-          <option name="timeStamp" value="86" />
+          <url>file://$PROJECT_DIR$/apkdump/apk_dump.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apkdump/apk_dump.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ImgClassify.py</url>
-          <line>69</line>
-          <option name="timeStamp" value="98" />
+          <line>142</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ImgClassify.py</url>
+          <line>134</line>
+          <option name="timeStamp" value="102" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -826,8 +835,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonLearn$ZouAUI.coverage" NAME="ZouAUI Coverage Results" MODIFIED="1605174779277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lol" />
-    <SUITE FILE_PATH="coverage/PythonLearn$ImgClassify.coverage" NAME="ImgClassify Coverage Results" MODIFIED="1597214827272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonLearn$ImgClassify.coverage" NAME="ImgClassify Coverage Results" MODIFIED="1635498042073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$apk_dump.coverage" NAME="apk_dump Coverage Results" MODIFIED="1630554258542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonLearn$apk_dump__1_.coverage" NAME="apk_dump (1) Coverage Results" MODIFIED="1634612419486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apkdump" />
     <SUITE FILE_PATH="coverage/PythonLearn$ZiDongZouA__1_.coverage" NAME="ZiDongZouA (1) Coverage Results" MODIFIED="1605091800436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lol" />
     <SUITE FILE_PATH="coverage/PythonLearn$ZiDongZouA.coverage" NAME="ZiDongZouA Coverage Results" MODIFIED="1605005186537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonLearn$ZhiLian.coverage" NAME="ZhiLian Coverage Results" MODIFIED="1611833993463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
